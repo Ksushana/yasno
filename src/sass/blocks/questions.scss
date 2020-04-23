@@ -1,0 +1,47 @@
+.questions__header {
+  @include section-header;
+}
+
+.questions__accord {
+  margin: 0 17.8%;
+
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    outline: none;
+    box-sizing: border-box;
+
+    box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.08);
+    min-height: 87px;
+    display: flex;
+
+    &.ui-state-active {
+      background-color: inherit;
+      border: none;
+      color: inherit;
+
+    }
+
+    &:first-child {
+      box-shadow: none;
+    }
+
+    span {
+      display: block;
+      margin: auto 0;
+    }
+  }
+
+  .ui-accordion-content {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+  }
+}
+
+.questions__link {
+  display: block;
+  width: 350px;
+  margin: 124px auto 160px;
+}

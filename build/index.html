@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ясно </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo"><img src="img/logo.png" width="105" height="52" alt="logo"></div>
+    <nav class="header__links">
+      <ul>
+        <li><a class="link-text header__link" href="#"><span>Психотерапевты</span></a></li>
+        <li><a class="link-text header__link" href="#"><span>Блог</span></a></li>
+        <li><a class="link-text header__link" href="#"><span>Вопросы-ответы</span></a></li>
+      </ul>
+    </nav><button class="header__login">Вход и регистрация</button>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="visually-hidden">Ясно</h1>
+      <section class="hero">
+        <div class="hero__text-block">
+          <p class="hero__pre">ПОДАРОЧНЫЙ СЕРТИФИКАТ</p>
+          <h2 class="hero__header">Самый важный подарок</h2>
+          <p class="here__text">Нам всем иногда нужна помощь, но иногда ее бывает сложно попросить. Позаботьтесь о близком человеке — подарите ему сессию с психотерапевтом.</p>
+        </div>
+        <div class="hero__photo"><img src="img/hero@2x.png" width="774" height="508" alt="hero"></div>
+      </section>
+      <section class="gift">
+        <h2 class="gift__header"></h2>
+        <div class="swiper-container gift__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide gift__item">
+              <div class="gift__sessions"><span class="gift__number">1</span><span>сессия</span></div>
+              <p class="gift__item-text">Хороший способ познакомить близкого человека с психотерапией</p>
+              <p class="gift__item-price">2 850 ₽</p><button class="button__blue">Подарить</button>
+            </div>
+            <div class="swiper-slide gift__item">
+              <div class="gift__sessions"><span class="gift__number"> 3</span><span>сессии</span></div>
+              <p class="gift__item-text">Чуть более углубленное знакомство с психотерапией и самим собой</p>
+              <p class="gift__item-price">2 850 ₽</p><button class="button__blue">Подарить</button>
+            </div>
+            <div class="swiper-slide gift__item"><span class="gift__choice"><svg width="11" height="9" aria-hidden="true"><use xlink:href="img/sprite.svg#heart"></use></svg>Выбор 53% клиентов</span>
+              <div class="gift__sessions"><span class="gift__number"> 5</span><span>сессии</span></div>
+              <p class="gift__item-text">Возможность увидеть и понять свои внутренние конфликты</p>
+              <p class="gift__item-price">2 850 ₽</p><button class="button__blue">Подарить</button></div>
+            <div class="swiper-slide gift__item">
+              <div class="gift__sessions"><span class="gift__number"> 10</span><span>сессии</span></div>
+              <p class="gift__item-text">Возможность лучше понять свои проблемы</p>
+              <p class="gift__item-price">2 850 ₽</p><button class="button__blue">Подарить</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="howitworks">
+        <h2 class="howitworks__header">Как это работает</h2>
+        <div class="swiper-container howitworks__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide howitworks__item">
+              <div class="howitworks__photo"><svg width="191" height="143" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#pig"></use>
+                </svg></div>
+              <p class="howitworks__text"></p>Выбираете сертификат и оплачиваете подарок
+            </div>
+            <div class="swiper-slide howitworks__item">
+              <div class="howitworks__photo"><svg width="191" height="143" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#notebook"></use>
+                </svg></div>
+              <p class="howitworks__text"></p>Получаете на свою почту сертификат с промо-кодом
+            </div>
+            <div class="swiper-slide howitworks__item">
+              <div class="howitworks__photo"><svg width="191" height="143" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#plane"></use>
+                </svg></div>
+              <p class="howitworks__text"></p>В нужный момент отправляете сертификат близкому человеку
+            </div>
+            <div class="swiper-slide howitworks__item">
+              <div class="howitworks__photo"><svg width="191" height="143" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#box"></use>
+                </svg></div>
+              <p class="howitworks__text"></p>Человек вводит промокод на сайте и начинает психотерапию
+            </div>
+          </div>
+        </div>
+        <p class="howitworks__howitlooks">Так будет выглядеть сертификат</p>
+        <div class="howitworks__certificate certificate">
+          <div class="certificate__textblock">
+            <h3 class="certificate__header">Самый важный подарок</h3>
+            <p class="certificate__question">Как начать?</p>
+            <ul class="certificate__steps">
+              <li>Зайдите на yasno.live</li>
+              <li>Введите промокод при регистрации</li>
+            </ul>
+          </div>
+          <div class="certificate__card"><img src="img/logo.png" width="105" height="52" alt="logo"><svg width="200" height="120" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#present"></use>
+            </svg>
+            <p>Промокод <span>АА8ФА8C</span> / <span>5 сессий<span> */</p><p><span>Владимир</span> → <span>Виктория</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <h2 class="questions__header"></h2>
+        <div class="questions__accord" id="accordion">
+          <h3><span>Каков срок действия сертификата?</span></h3>
+          <div>111</div>
+          <h3>Как активировать сертификат?</h3>
+          <div></div>
+          <h3>Что произойдет, когда ваш близкий человек зарегистрируется?</h3>
+          <div></div>
+          <h3>Можно ли вернуть сертификат?</h3>
+          <div></div>
+          <h3>Можно ли передаривать сертификат?</h3>
+          <div></div>
+          <h3>Суммируется ли сертфикат с другими бонусами и промо-кодами?</h3>
+          <div></div>
+        </div><a class="link-text button__blue questions__link" href="#"><span>Выбрать сертификат</span></a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__social footer__block">
+      <p>2017 — 2019 Ясно</p>
+      <ul class="footer__social-list">
+        <li><svg width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg></li>
+        <li><svg width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg></li>
+        <li><svg width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg></li>
+      </ul>
+    </div>
+    <div class="footer__info footer__block">
+      <p>Важный момент. "Ясно" — это не скорая психологическая помощь. Если у вас серьезные, угрожающие вашей жизни проблемы, которые требуют немедленного решения, вам лучше обратиться в какую- либо<a class="link-text footer__link" href="#"><span>из этих организаций.</span></a></p>
+      <p>Регистрация на сайте означает согласие с<a class="link-text footer__link" href="#"><span>пользовательским соглашением.</span></a></p>
+    </div>
+    <div class="footer__links footer__block">
+      <ul>
+        <li>Психотерапевты</li>
+        <li>Блог</li>
+        <li>Вопросы-ответы</li>
+        <li>Пользовательское соглашение</li>
+        <li>Политика в отношении обработки и защиты персональных данных</li>
+        <li>Для терапевтов</li>
+        <li>Проверка совместимости</li>
+      </ul>
+    </div>
+    <div class="footer__contacts footer__block">
+      <p>Мы на связи:</p>
+      <p>Служба поддержки</p><a class="link-text footer__link" href="tel:+74954095361"><span>+7 (495) 409-5361</span></a><a class="link-text footer__link" href="email:vse@yasno.live"><span>vse@yasno.live</span></a><a class="link-text footer__link" href="#"><span>Бесплатная консультация 👈</span></a>
+      <div class="footer__genue">
+        <p>Дизайн —<a class="link-text footer__link" href="#"><span>студия Genue</span></a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+
+  a {
+    color: $color-blue-text;
+  }
+}
+
+.footer__block {
+  width: 25%;
+}
+
+.footer__social-list {
+  @include list-reset;
+  display: flex;
+
+  li {
+    margin-right: 17px;
+
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer__links {
+  ul {
+    @include list-reset;
+  }
+}
+
+.footer__contacts {
+  a {
+    display: block;
+  }
+}
+
+.footer__genue {
+  a {
+    display: inline;
+  }
+}

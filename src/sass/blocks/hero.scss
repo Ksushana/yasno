@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hero__text-block {
+  width: 45%;
+}
+
+.hero__photo {
+  width: 55%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.hero__pre {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 31px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-grey-font;
+}
+
+.hero__header {
+  @include section-header;
+  text-align: left;
+}
+
+.here__text {
+  font-weight: 500;
+}

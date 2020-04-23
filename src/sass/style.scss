@@ -1,0 +1,20 @@
+/* Vendor */
+@import "vendor/normalize";
+@import "vendor/swiper";
+@import "vendor/magnific";
+@import "vendor/ui-style";
+/* General */
+@import "general/variables";
+@import "general/functions";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/global";
+
+/* Blocks */
+@import "blocks/certificate";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/hero";
+@import "blocks/gift";
+@import "blocks/howitworks";
+@import "blocks/questions";

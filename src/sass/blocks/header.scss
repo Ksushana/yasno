@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: $color-white;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 36px;
+  min-height: 76px;
+  padding: 12px 80px;
+}
+
+.header__logo {
+  height: 52px;
+
+}
+
+.header__links {
+  display: flex;
+  ul {
+    @include list-reset;
+    display: flex;
+  }
+
+  li a {
+    padding: 0 9px;
+  }
+}
+
+.header__login {
+  border: none;
+  background-color: inherit;
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+

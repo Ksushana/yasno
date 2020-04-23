@@ -1,0 +1,80 @@
+.gift {
+
+}
+
+.gift__header {
+  @include section-header;
+}
+
+.gift__slider {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.swiper-slide.gift__item {
+  width: calc(25% - 32px);
+  background: $color-white;
+  box-shadow: 0px 4px 20px rgba(10, 61, 100, 0.1);
+  border-radius: 16px;
+  margin-right: 32px;
+  padding: 12px 16px;
+  text-align: center;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.gift__sessions {
+  span {
+    display: block;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .gift__number {
+    font-weight: 300;
+    font-size: size(100px);
+    line-height: 161px;
+  }
+}
+
+.gift__item-text {
+  font-weight: 500;
+  font-size: size(15px);
+  line-height: 23px;
+  min-height: 108px;
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.08), 0px 1px 0px rgba(0, 0, 0, 0.08);
+  padding: 18px 0;
+
+}
+
+.gift__item-price {
+  font-weight: 500;
+  font-size: size(36px);
+  line-height: 36px;
+}
+
+.gift__choice {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  border-radius: 100px;
+  background-color: $color-beige;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+}
