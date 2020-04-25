@@ -6,40 +6,115 @@
   margin: 0 auto;
   background-color: $color-white;
   display: flex;
-  padding: 40px;
+  justify-content: space-between;
+  padding: 49px 28px 40px;
+  background-image: url("./../../img/blue.png");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: right bottom;
 }
 
 .certificate__textblock {
   width: 30%;
+  position: relative;
+
+
 }
 
 .certificate__header {
-  font-size: 35px;
+  font-size: 36px;
+  line-height: 38px;
+  margin: 5px 27px;
+  font-weight: 500;
 }
 
 .certificate__question {
-  font-size: size(12px);
+  font-size: 12px;
+
+  font-weight: 600;
+  margin-left: 28px;
+  margin-top: 21px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  position: relative;
+
+  .certificate__dots {
+    position: absolute;
+    width: 1px;
+    height: 34px;
+    background-color: $color-blue-bright;
+    left: -23px;
+    top: 47px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background-color: $color-blue-bright;
+      border-radius: 50%;
+      top: -3px;
+      right: -3px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background-color: $color-blue-bright;
+      border-radius: 50%;
+      bottom: -3px;
+      right: -3px;
+    }
+  }
 }
 
 .certificate__steps {
   font-size: size(16px);
+  margin-top: 1px;
+
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  @include list-reset;
+  padding-left: 28px;
+  position: relative;
+
+
+
+  li {
+    margin-bottom: 12px;
+  }
 }
 
 .certificate__card {
   box-shadow: 0px 7.47735px 44.8641px rgba(193, 193, 193, 0.4);
-  border-radius: 40px;
+  border-radius: 30px;
   position: relative;
-  width: 68%;
+  width: 56.5%;
+  height: 250px;
   display: flex;
   flex-direction: column;
+  margin-right: 34px;
+  z-index: 10;
+  background-color: $color-white;
 
   img {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 11px;
+    left: 10px;
   }
 
   svg {
+    margin: 12px auto 8px;
+    width: 53%;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: size(18px);
+    line-height: 28px;
     margin: 0 auto;
   }
 }

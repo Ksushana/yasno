@@ -1,18 +1,28 @@
 .gift {
+  padding-bottom: 4.5rem;
 
+  @include tablet {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
 }
 
 .gift__header {
   @include section-header;
+  margin-bottom: 60px;
 }
 
 .gift__slider {
   display: flex;
   flex-wrap: nowrap;
+
+  .swiper-wrapper {
+    height: auto;
+  }
 }
 
 .swiper-slide.gift__item {
-  width: calc(25% - 32px);
+  width: calc(25% - 24px);
   background: $color-white;
   box-shadow: 0px 4px 20px rgba(10, 61, 100, 0.1);
   border-radius: 16px;
@@ -20,6 +30,14 @@
   padding: 12px 16px;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    width: 256px;
+    margin-left: 20px;
+    margin-right: 0;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -29,6 +47,7 @@
     width: 100%;
     border: none;
     transition: opacity 0.5s;
+    margin-top: 35px;
 
     &:hover {
       opacity: 0.6;
@@ -37,6 +56,8 @@
 }
 
 .gift__sessions {
+  margin-bottom: 28px;
+
   span {
     display: block;
     font-size: 20px;
@@ -47,7 +68,8 @@
   .gift__number {
     font-weight: 300;
     font-size: size(100px);
-    line-height: 161px;
+    line-height: 88px;
+    padding-top: 36px;
   }
 }
 
@@ -57,14 +79,29 @@
   line-height: 23px;
   min-height: 108px;
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.08), 0px 1px 0px rgba(0, 0, 0, 0.08);
-  padding: 18px 0;
+  padding: 18px 25px;
+  margin: 0 -16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 2;
 
+  span {
+    display: block;
+    margin: auto 0;
+  }
 }
 
 .gift__item-price {
   font-weight: 500;
   font-size: size(36px);
   line-height: 36px;
+  margin-bottom: 12px;
+
+  span {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 
 .gift__choice {
@@ -77,4 +114,6 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 12px;
+  height: 22px;
+  padding: 5px 0;
 }

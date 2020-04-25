@@ -1,18 +1,52 @@
 .hero {
   display: flex;
   flex-wrap: nowrap;
+
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .hero__text-block {
-  width: 45%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 65px 0 65px;
+
+  @include tablet {
+    width: 80%;
+    margin-bottom: 0;
+  }
 }
 
 .hero__photo {
-  width: 55%;
+  width: 60%;
+  position: relative;
+  height: 641px;
+  margin-top: -46px;
+
+  @include tablet {
+    width: 80%;
+    margin-top: 0;
+    display: flex;
+    height: auto;
+  }
 
   img {
-    width: 100%;
+    width: 115%;
     height: auto;
+    position: absolute;
+    left: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include tablet {
+      width: 80%;
+      position: static;
+      transform: none;
+      margin: 0 auto;
+      height: auto;
+    }
   }
 }
 
@@ -23,13 +57,18 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $color-grey-font;
+  letter-spacing: 1px;
 }
 
 .hero__header {
-  @include section-header;
-  text-align: left;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 64px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .here__text {
   font-weight: 500;
+  margin-bottom: auto;
 }
