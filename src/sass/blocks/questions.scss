@@ -1,11 +1,20 @@
 .questions__header {
   @include section-header;
   padding-top: 50px;
+
+  @include mobile {
+    padding-top: 29px;
+  }
 }
 
 .questions__accord {
   margin: 0px 7.4%;
   padding-top: 27px;
+
+  @include mobile {
+    margin: 0;
+    padding-top: 12px;
+  }
 
   h3.ui-accordion-header {
     font-weight: 500;
@@ -17,6 +26,14 @@
     box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.08);
     min-height: 87px;
     display: flex;
+    padding-right: 40px;
+
+    @include mobile {
+      font-size: 17px;
+      line-height: 32px;
+      padding-left: 0;
+      min-height: 55px;
+    }
 
     &.ui-state-active {
       background-color: inherit;
@@ -44,6 +61,13 @@
     top: 31px;
     transition: transform 0.5s;
 
+    @include mobile {
+      width: 16px;
+      height: 16px;
+      right: 0px;
+      top: 38%;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -52,6 +76,10 @@
       top: 0;
       left: 11px;
       background-color: $color-grey-font;
+
+      @include mobile {
+        left: 7px;
+      }
     }
 
     &:after {
@@ -62,6 +90,10 @@
       top: 11px;
       left: 0;
       background-color: $color-grey-font;
+
+      @include mobile {
+        top: 7px;
+      }
     }
 
     &.ui-icon-triangle-1-s {
@@ -80,6 +112,14 @@
     line-height: 27px;
     transform: translateY(-6px);
     padding-bottom: 24px;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 22px;
+      transform: translateY(0px);
+      padding-left: 0;
+      padding-right: 20px;
+    }
   }
 }
 
@@ -87,4 +127,8 @@
   display: block;
   width: 350px;
   margin: 120px auto 126px;
+
+  @include mobile {
+    margin: 65px auto 75px;
+  }
 }

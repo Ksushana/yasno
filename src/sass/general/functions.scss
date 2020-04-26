@@ -1,3 +1,7 @@
-@function size($size-in-px) {
-  @return $size-in-px / $font-base * 1rem;
+@function size-mobile($size-in-px) {
+  @return $size-in-px / $font-base * 0.65rem;
+}
+
+@function size-tablet($size-in-px) {
+  @return $size-in-px / $font-base * 0.9rem;
 }

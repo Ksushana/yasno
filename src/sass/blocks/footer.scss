@@ -11,6 +11,13 @@
     padding: 30px 20px;
   }
 
+  @include mobile {
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 16px 16px;
+  }
+
   a {
     color: $color-blue-text;
   }
@@ -20,19 +27,39 @@
   padding-right: 30px;
   &.footer__social {
     width: 20%;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &.footer__info {
     width: 31.4%;
+
+    @include mobile {
+      width: 100%;
+
+      p:first-child {
+
+      }
+    }
   }
 
   &.footer__links {
     width: 29.3%;
     margin-top: 13px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &.footer__contacts {
     margin-top: 13px;
+
+    @include mobile {
+      width: 100%;
+    }
 
     span {
       display: block;
@@ -52,6 +79,10 @@
   @include list-reset;
   display: flex;
   margin-top: 23px;
+
+  @include mobile {
+    margin: 16px 0 0;
+  }
 
   li {
     margin-right: 17px;

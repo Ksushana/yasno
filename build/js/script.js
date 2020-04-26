@@ -29011,11 +29011,11 @@ $(function () {
   });
 });
 (() => {
-  const slider = document.querySelector(`.gift__slider`);
+  const giftSlider = document.querySelector(`.gift__slider`);
 
-  if (slider) {
+  if (giftSlider) {
     if (!window.isDesktop()) {
-      new Swiper(slider, {
+      new Swiper(giftSlider, {
         slidesPerView: "auto",
         slidesPerColumn: 1,
         spaceBetween: 0,

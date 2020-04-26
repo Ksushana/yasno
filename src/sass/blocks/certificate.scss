@@ -12,13 +12,43 @@
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: right bottom;
+
+  @include tablet {
+    border: size-tablet(0.593333px) solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: size-tablet(8px);
+    width: size-tablet(735px);
+    margin: 0 auto;
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    padding: size-tablet(49px) size-tablet(28px) size-tablet(40px);
+    background-image: url("./../../img/blue.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: right bottom;
+  }
+
+  @include mobile {
+    border: size-mobile(0.593333px) solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: size-mobile(8px);
+    width: size-mobile(735px);
+    margin: 0 auto;
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    padding: size-mobile(49px) size-mobile(28px) size-mobile(40px);
+    background-image: url("./../../img/blue.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: right bottom;
+  }
 }
 
 .certificate__textblock {
   width: 30%;
   position: relative;
-
-
 }
 
 .certificate__header {
@@ -26,11 +56,24 @@
   line-height: 38px;
   margin: 5px 27px;
   font-weight: 500;
+
+  @include tablet {
+    font-size: size-tablet(36px);
+    line-height: size-tablet(38px);
+    margin: size-tablet(5px) size-tablet(27px);
+    font-weight: 500;
+  }
+
+  @include mobile {
+    font-size: size-mobile(36px);
+    line-height: size-mobile(38px);
+    margin: size-mobile(5px) size-mobile(27px);
+    font-weight: 500;
+  }
 }
 
 .certificate__question {
   font-size: 12px;
-
   font-weight: 600;
   margin-left: 28px;
   margin-top: 21px;
@@ -39,6 +82,28 @@
   letter-spacing: 1.8px;
   position: relative;
 
+  @include tablet {
+    font-size: size-tablet(12px);
+    font-weight: 600;
+    margin-left: size-tablet(28px);
+    margin-top: size-tablet(21px);
+    margin-bottom: size-tablet(5px);
+    text-transform: uppercase;
+    letter-spacing: size-tablet(1.8px);
+    position: relative;
+  }
+
+  @include mobile {
+    font-size: size-mobile(12px);
+    font-weight: 600;
+    margin-left: size-mobile(28px);
+    margin-top: size-mobile(21px);
+    margin-bottom: size-mobile(5px);
+    text-transform: uppercase;
+    letter-spacing: size-mobile(1.8px);
+    position: relative;
+  }
+
   .certificate__dots {
     position: absolute;
     width: 1px;
@@ -46,6 +111,24 @@
     background-color: $color-blue-bright;
     left: -23px;
     top: 47px;
+
+    @include tablet {
+      position: absolute;
+      width: size-tablet(1px);
+      height: size-tablet(34px);
+      background-color: $color-blue-bright;
+      left: size-tablet(-23px);
+      top: size-tablet(47px);
+    }
+
+    @include mobile {
+      position: absolute;
+      width: size-mobile(1px);
+      height: size-mobile(34px);
+      background-color: $color-blue-bright;
+      left: size-mobile(-23px);
+      top: size-mobile(47px);
+    }
 
     &::before {
       content: "";
@@ -56,6 +139,26 @@
       border-radius: 50%;
       top: -3px;
       right: -3px;
+
+      @include tablet {
+        position: absolute;
+        width: size-tablet(7px);
+        height: size-tablet(7px);
+        background-color: $color-blue-bright;
+        border-radius: 50%;
+        top: size-tablet(-3px);
+        right: size-tablet(-3px);
+      }
+
+      @include mobile {
+        position: absolute;
+        width: size-mobile(7px);
+        height: size-mobile(7px);
+        background-color: $color-blue-bright;
+        border-radius: 50%;
+        top: size-mobile(-3px);
+        right: size-mobile(-3px);
+      }
     }
 
     &::after {
@@ -67,12 +170,32 @@
       border-radius: 50%;
       bottom: -3px;
       right: -3px;
+
+      @include tablet {
+        position: absolute;
+        width: size-tablet(7px);
+        height: size-tablet(7px);
+        background-color: $color-blue-bright;
+        border-radius: 50%;
+        bottom: size-tablet(-3px);
+        right: size-tablet(-3px);
+      }
+
+      @include mobile {
+        position: absolute;
+        width: size-mobile(7px);
+        height: size-mobile(7px);
+        background-color: $color-blue-bright;
+        border-radius: 50%;
+        bottom: size-mobile(-3px);
+        right: size-mobile(-3px);
+      }
     }
   }
 }
 
 .certificate__steps {
-  font-size: size(16px);
+  font-size: 16px;
   margin-top: 1px;
 
   letter-spacing: 0.3px;
@@ -81,15 +204,43 @@
   padding-left: 28px;
   position: relative;
 
+  @include tablet {
+    font-size: size-tablet(16px);
+    margin-top: size-tablet(1px);
 
+    letter-spacing: size-tablet(0.3px);
+    line-height: size-tablet(22px);
+    @include list-reset;
+    padding-left: size-tablet(28px);
+    position: relative;
+  }
+
+  @include mobile {
+    font-size: size-mobile(16px);
+    margin-top: size-mobile(1px);
+
+    letter-spacing: size-mobile(0.3px);
+    line-height: size-mobile(22px);
+    @include list-reset;
+    padding-left: size-mobile(28px);
+    position: relative;
+  }
 
   li {
     margin-bottom: 12px;
+
+    @include tablet {
+      margin-bottom: size-tablet(12px);
+    }
+
+    @include mobile {
+      margin-bottom: size-mobile(12px);
+    }
   }
 }
 
 .certificate__card {
-  box-shadow: 0px 7.47735px 44.8641px rgba(193, 193, 193, 0.4);
+  box-shadow: 0 7px 44px rgba(193, 193, 193, 0.4);
   border-radius: 30px;
   position: relative;
   width: 56.5%;
@@ -100,21 +251,75 @@
   z-index: 10;
   background-color: $color-white;
 
+  @include tablet {
+    box-shadow: 0 size-tablet(7px) size-tablet(44px) rgba(193, 193, 193, 0.4);
+    border-radius: size-tablet(30px);
+    position: relative;
+    width: 56.5%;
+    height: size-tablet(250px);
+    display: flex;
+    flex-direction: column;
+    margin-right: size-tablet(34px);
+    z-index: 10;
+    background-color: $color-white;
+  }
+
+  @include mobile {
+    box-shadow: 0 size-mobile(7px) size-mobile(44px) rgba(193, 193, 193, 0.4);
+    border-radius: size-mobile(30px);
+    position: relative;
+    width: 56.5%;
+    height: size-mobile(250px);
+    display: flex;
+    flex-direction: column;
+    margin-right: size-mobile(34px);
+    z-index: 10;
+    background-color: $color-white;
+  }
+
   img {
     position: absolute;
     top: 11px;
     left: 10px;
+
+    @include tablet {
+      top: size-tablet(11px);
+      left: size-tablet(10px);
+    }
+
+    @include mobile {
+      top: size-mobile(11px);
+      left: size-mobile(10px);
+    }
   }
 
   svg {
     margin: 12px auto 8px;
     width: 53%;
+
+    @include tablet {
+      margin: size-tablet(12px) auto size-tablet(8px);
+    }
+
+    @include mobile {
+      margin: size-mobile(12px) auto size-mobile(8px);
+    }
   }
 
   p {
     font-weight: 600;
-    font-size: size(18px);
+    font-size: 18px;
     line-height: 28px;
     margin: 0 auto;
+
+    @include tablet {
+      font-size: size-tablet(18px);
+      line-height: size-tablet(28px);
+    }
+
+    @include mobile {
+      font-size: size-mobile(18px);
+      line-height: size-mobile(28px);
+    }
   }
 }

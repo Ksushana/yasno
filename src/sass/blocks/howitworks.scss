@@ -2,11 +2,27 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 46px;
+
+  @include tablet {
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+
+    display: block;
+  }
+
+  @include mobile {
+    padding-bottom: 16px;
+  }
 }
 
 .howitworks__header {
   @include section-header;
   margin-bottom: 42px;
+
+  @include mobile {
+    margin-bottom: 17px;
+  }
 }
 
 .swiper-container.howitworks__slider {
@@ -29,6 +45,11 @@
     width: 256px;
     margin-left: 20px;
     margin-right: 0;
+  }
+
+  @include tablet {
+    margin-left: 17px;
+    margin-right: 15px;
   }
 
   &:last-child {
@@ -75,6 +96,16 @@
     left: -38px;
     top: -17px;
   }
+
+  @include mobile {
+    padding-top: 13px;
+    padding-left: 0;
+    text-align: center;
+
+    &:before {
+      display: none;
+    }
+  }
 }
 
 .howitworks__photo {
@@ -82,7 +113,9 @@
   margin-bottom: 22px;
   position: relative;
 
-
+  @include mobile {
+    margin-bottom: 19px;
+  }
 
 
   &:last-child {
