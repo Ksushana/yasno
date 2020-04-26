@@ -248,6 +248,7 @@
 
 .contact-page__certificate.certificate {
   margin: 38px 0 0 auto;
+  border: 1px solid #EBEBEB;
 
   @media (min-width: 992px) and (max-width: 1255px) {
     flex-direction: column;
@@ -258,6 +259,10 @@
 
     .certificate__card {
       margin: 10px auto 0;
+    }
+
+    .certificate__turn {
+      right: -360px;
     }
 
   }
@@ -281,6 +286,7 @@
   @media (min-width: 320px) and (max-width: 416px) {
     flex-direction: column;
     width: 100%;
+    border: 1px solid #EBEBEB;
 
     .certificate__textblock {
       width: 100%;

@@ -3626,10 +3626,11 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 49px 28px 40px;
-  background-image: url("./../../img/blue.png");
+  background-image: url("./../img/blue.png");
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: right bottom;
+  position: relative;
 }
 
 @media (max-width: 991px) {
@@ -3648,7 +3649,7 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 2.1rem 1.2rem 1.71429rem;
-    background-image: url("./../../img/blue.png");
+    background-image: url("./../img/blue.png");
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: right bottom;
@@ -3671,7 +3672,7 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 1.51667rem 0.86667rem 1.2381rem;
-    background-image: url("./../../img/blue.png");
+    background-image: url("./../img/blue.png");
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: right bottom;
@@ -3738,7 +3739,7 @@ button {
 
 @media (max-width: 991px) {
   .certificate__question {
-    font-size: 0.51429rem;
+    font-size: 0.51429rem !important;
     font-weight: 600;
     margin-left: 1.2rem;
     margin-top: 0.9rem;
@@ -3751,7 +3752,7 @@ button {
 
 @media (max-width: 767px) {
   .certificate__question {
-    font-size: 0.37143rem;
+    font-size: 0.37143rem !important;
     font-weight: 600;
     margin-left: 0.86667rem;
     margin-top: 0.65rem;
@@ -4044,6 +4045,32 @@ button {
   }
 }
 
+.certificate__turn {
+  position: absolute;
+  font-size: 10px;
+  text-align: center;
+  color: rgba(40, 40, 40, 0.4);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 0;
+  bottom: 0;
+  right: -290px;
+}
+
+@media (max-width: 991px) {
+  .certificate__turn {
+    font-size: 0.42857rem;
+    right: -12.42857rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificate__turn {
+    font-size: 0.30952rem !important;
+    right: -8.97619rem;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4161,7 +4188,7 @@ button {
   content: "";
   width: 16px;
   height: 20px;
-  background-image: url(./../../img/lock.svg);
+  background-image: url(./../img/lock.svg);
   background-size: contain;
   background-repeat: no-repeat;
   left: -21px;
@@ -4773,7 +4800,7 @@ button {
   content: "";
   width: 115px;
   height: 106px;
-  background-image: url(./../../img/arrow-long.svg);
+  background-image: url(./../img/arrow-long.svg);
   background-size: contain;
   background-repeat: no-repeat;
   left: -38px;
@@ -5289,6 +5316,7 @@ button {
 
 .contact-page__certificate.certificate {
   margin: 38px 0 0 auto;
+  border: 1px solid #EBEBEB;
 }
 
 @media (min-width: 992px) and (max-width: 1255px) {
@@ -5303,6 +5331,9 @@ button {
   }
   .contact-page__certificate.certificate .certificate__card {
     margin: 10px auto 0;
+  }
+  .contact-page__certificate.certificate .certificate__turn {
+    right: -360px;
   }
 }
 
@@ -5337,6 +5368,7 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    border: 1px solid #EBEBEB;
   }
   .contact-page__form.certificate .certificate__textblock {
     width: 100%;
