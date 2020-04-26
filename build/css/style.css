@@ -4950,6 +4950,15 @@ button {
   margin-top: 84px;
 }
 
+@media (max-width: 767px) {
+  .contact-page-header {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0;
+    margin-top: 50px;
+  }
+}
+
 .contact-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4967,12 +4976,25 @@ button {
   }
 }
 
+@media (max-width: 767px) {
+  .contact-page {
+    padding-bottom: 71px;
+  }
+}
+
 .contact-page__steps-cover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 46px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .contact-page__steps-cover {
+    margin-top: 26px;
+    margin-bottom: 8px;
+  }
 }
 
 .contact-page__steps-cover .contact-page__steps {
@@ -4983,6 +5005,12 @@ button {
   color: #A2ADB8;
   position: relative;
   width: 39%;
+}
+
+@media (max-width: 767px) {
+  .contact-page__steps-cover .contact-page__steps {
+    width: 100%;
+  }
 }
 
 .contact-page__steps-cover .contact-page__steps .line {
@@ -5058,6 +5086,12 @@ button {
   margin-top: 23px;
 }
 
+@media (max-width: 767px) {
+  .contact-page__steps-cover .contact-page__steps .contact-page__step {
+    width: 24%;
+  }
+}
+
 .contact-page__steps-cover .contact-page__steps .contact-page__step--contacts {
   color: #282828;
 }
@@ -5099,6 +5133,13 @@ button {
 @media (max-width: 991px) {
   .contact-page__form-cover form {
     width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-page__form-cover form {
+    width: 100%;
   }
 }
 
@@ -5121,6 +5162,12 @@ button {
   display: block;
   margin-top: 7px;
   margin-bottom: 49px;
+}
+
+@media (max-width: 767px) {
+  .contact-page__form-cover form .contact-page__checkbox ~ label {
+    margin-bottom: 57px;
+  }
 }
 
 .contact-page__form-cover form .contact-page__checkbox ~ label::before {
@@ -5150,6 +5197,13 @@ button {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-page__form-cover form .button__blue {
+    width: 91%;
+    margin-top: 66px;
   }
 }
 
@@ -5193,5 +5247,23 @@ button {
 @media (max-width: 991px) {
   .contact-page__certificate.certificate {
     margin: 40px auto 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-page__certificate.certificate {
+    display: none;
+  }
+}
+
+.contact-page__form.certificate {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .contact-page__form.certificate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }

@@ -52,6 +52,19 @@ html( lang="ru" )
               p На вашу почту придет сертификат
               input.contact-page__checkbox( type="checkbox" id="agree" name="agree" value="Согласен с условиями договора-оферты" )
               label( for="agree" ) Согласен с условиями договора-оферты
+              .contact-page__form.certificate
+                .certificate__textblock
+                  h3.certificate__header Самый важный подарок
+                  p.certificate__question Как начать?
+                    span.certificate__dots
+                  ul.certificate__steps
+                    li Зайдите на yasno.live
+                    li Введите промокод при регистрации
+                .certificate__card
+                  img(src="img/logo.png" width="75" height="40" alt="logo")
+                  +svg-present
+                  p Промокод <span>АА8ФА8C</span> / <span>5 сессий<span>
+                  p <span>Владимир</span> → <span>Виктория</span>
               input.button__blue( type="submit" value="Оплатить 2 850 ₽")
 
             .contact-page__certificate.certificate
