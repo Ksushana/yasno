@@ -53,11 +53,12 @@
     margin-right: 0;
   }
 
-  button {
+  a {
     width: 100%;
     border: none;
     transition: opacity 0.5s;
     margin-top: 35px;
+    display: block;
 
     &:hover {
       opacity: 0.6;

@@ -1,0 +1,224 @@
+.contact-page-header {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 64px;
+  text-align: center;
+  padding: 0 15%;
+  margin-top: 84px;
+}
+
+.container__contacts {
+  @media (max-width: 1255px) {
+    // padding: 0 60px;
+  }
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 167px;
+
+  @include tablet {
+    padding-bottom: 67px;
+  }
+}
+
+.contact-page__steps-cover {
+  display: flex;
+  margin-top: 46px;
+  margin-bottom: 60px;
+
+  .contact-page__steps {
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: $color-grey-font;
+    position: relative;
+    width: 39%;
+
+    .line {
+      position: absolute;
+      width: 77%;
+      height: 4px;
+      background: linear-gradient(to right, $color-blue-bright 50%, $color-grey-light 50%, $color-grey-light 100%);;
+      margin-left: 50%;
+      transform: translateX(-50%);
+
+      .line__dot {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $color-blue-bright;
+        position: absolute;
+        top: -10px;
+        -webkit-box-shadow: 0px 0px 0px 4px rgba(240,244,247,1);
+        -moz-box-shadow: 0px 0px 0px 4px rgba(240,244,247,1);
+        box-shadow: 0px 0px 0px 4px rgba(240,244,247,1);
+
+        &--choose {
+          left: -15px;
+
+          svg {
+            position: absolute;
+            top: 9px;
+            right: 6px;
+          }
+        }
+
+        &--contacts {
+          left: calc(50% - 12px);
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            top: 9px;
+            right: 37%;
+            background-color: $color-white;
+          }
+        }
+
+        &--pay {
+          width: 16px;
+          height: 16px;
+          right: -15px;
+          top: -6px;
+          background-color: $color-grey-light;
+          -webkit-box-shadow: inset 0px 0px 0px 4px rgba(240,244,247,1);
+          -moz-box-shadow: inset 0px 0px 0px 4px rgba(240,244,247,1);
+          box-shadow: inset 0px 0px 0px 4px rgba(240,244,247,1);
+        }
+      }
+    }
+
+    .contact-page__step-cover {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contact-page__step {
+      display: block;
+      width: 21%;
+      margin-top: 23px;
+
+      &--contacts {
+        color: $color-black-font;
+      }
+    }
+  }
+}
+
+.contact-page__form-cover {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    padding-top: 29px;
+    padding-right: 20px;
+
+    @media (max-width: 1255px) {
+      width: 34%;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 14px;
+      color: $color-grey-font;
+      margin-top: 0;
+    }
+
+    .contact-page__checkbox {
+      visibility: hidden;
+    }
+
+    .contact-page__checkbox ~ label {
+      font-size: 16px;
+      line-height: 19px;
+      padding-left: 36px;
+      position: relative;
+      display: block;
+      margin-top: 7px;
+      margin-bottom: 49px;
+    }
+
+    .contact-page__checkbox~ label::before {
+      content: "";
+      position: absolute;
+      border-radius: 4px;
+      background-color: $color-blue-font;
+      width: 22px;
+      height: 22px;
+      top: -3px;
+      left: 2px;
+      border: 1px solid #BABABA;
+    }
+
+    .contact-page__checkbox:checked + label::before {
+      background-image: url("../img/check.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .button__blue {
+      border: none;
+
+      @include tablet {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .contact-page__input {
+    height: 39px;
+    font-size: 16px;
+    line-height: 36px;
+    color: #6C757D;
+    border: 1px solid #BABABA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #BABABA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: $color-blue-font;
+    margin: 8px 0 9px;
+    outline: none;
+    padding: 0 12px;
+  }
+}
+
+.contact-page__certificate.certificate {
+  margin: 38px 0 0 auto;
+
+  @media (min-width: 992px) and (max-width: 1255px) {
+    flex-direction: column;
+
+    .certificate__textblock {
+      width: 100%;
+    }
+
+    .certificate__card {
+      margin: 10px auto 0;
+    }
+
+  }
+
+  @include tablet {
+    margin: 40px auto 0;
+  }
+}

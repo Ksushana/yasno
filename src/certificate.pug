@@ -1,0 +1,114 @@
+include pug/mixins
+
+block variables
+- let mainTitle = "Сертификат";
+
+doctype html
+html( lang="ru" )
+  head
+    meta( charset="UTF-8" )
+    title #{mainTitle} !{title && "| " + title}
+    meta( name="viewport" content="width=device-width, initial-scale=1.0" )
+    link( rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="stylesheet" href="css/style.min.css" )
+
+  body
+    header.header
+      .header__logo
+        img(src="img/logo.png" width="105" height="52" alt="logo")
+
+      nav.header__links
+        ul
+          li: +link-text( "Терапевты", "#", "header__link" )
+          li: +link-text( "Блог", "#","header__link" )
+          li: +link-text( "Вопросы-ответы", "#","header__link header__link--nomobile" )
+      button.header__login Вход <span>и регистрация</span>
+
+    main
+      .container.container__contacts
+        h1.contact-page-header Подарочный сертификат на <span>5</span> сессий
+
+        section.contact-page
+          .contact-page__steps-cover
+            .contact-page__steps
+              .line
+                span.line__dot.line__dot--choose
+                  +svg( "check", 12, 8 )
+                span.line__dot.line__dot--contacts
+                span.line__dot.line__dot--pay
+              .contact-page__step-cover
+                span.contact-page__step.contact-page__step--choose Выбор подарка
+                span.contact-page__step.contact-page__step--contacts Контакты
+                span.contact-page__step.contact-page__step--pay Оплата
+
+          .contact-page__form-cover
+            form.contact-page__form
+              input.contact-page__input( type="text" name="first_name" placeholder="От кого")
+              input.contact-page__input( type="text" name="first_name" placeholder="Кому")
+              input.contact-page__input( type="email" name="user_email" placeholder="Ваша эл. почта")
+              p На вашу почту придет сертификат
+              input.contact-page__checkbox( type="checkbox" id="agree" name="agree" value="Согласен с условиями договора-оферты" )
+              label( for="agree" ) Согласен с условиями договора-оферты
+              input.button__blue( type="submit" value="Оплатить 2 850 ₽")
+
+            .contact-page__certificate.certificate
+              .certificate__textblock
+                h3.certificate__header Самый важный подарок
+                p.certificate__question Как начать?
+                  span.certificate__dots
+                ul.certificate__steps
+                  li Зайдите на yasno.live
+                  li Введите промокод при регистрации
+              .certificate__card
+                img(src="img/logo.png" width="75" height="40" alt="logo")
+                +svg-present
+                p Промокод <span>АА8ФА8C</span> / <span>5 сессий<span>
+                p <span>Владимир</span> → <span>Виктория</span>
+
+
+    footer.footer
+      .footer__social.footer__block
+        p 2017 — 2019 Ясно
+        ul.footer__social-list
+          li
+            a( href="#" )
+              +svg( "vk", 32, 32 )
+          li
+            a( href="#" )
+              +svg( "facebook", 32, 32 )
+          li
+            a( href="#" )
+              +svg( "instagram", 32, 32 )
+
+      .footer__info.footer__block
+        p Важный момент. "Ясно" — это не скорая психологическая помощь. Если у вас серьезные, угрожающие вашей жизни проблемы, которые требуют немедленного решения, вам лучше обратиться в какую-либо
+          +link-text( " из этих организаций.", "#", "footer__link" )
+        p Регистрация на сайте означает согласие с
+          +link-text( " пользовательским соглашением.", "#", "footer__link" )
+
+      .footer__links.footer__block
+        ul
+          li Психотерапевты
+          li Блог
+          li Вопросы-ответы
+          li Пользовательское соглашение
+          li Политика в отношении обработки и защиты персональных данных
+          li Для терапевтов
+          li Проверка совместимости
+
+      .footer__contacts.footer__block
+        span Мы на связи:
+        span Служба поддержки
+        +link-text( "+7 (495) 409-5361", "tel:+74954095361", "footer__link" )
+        +link-text( "vse@yasno.live", "email:vse@yasno.live", "footer__link" )
+        +link-text( "Бесплатная консультация 👈", "#", "footer__link" )
+        .footer__genue
+          p Дизайн —
+            +link-text( " студия Genue", "https://genue.ru/", "footer__link" )
+
+
+    block scripts
+      script( src="js/script.min.js" )
