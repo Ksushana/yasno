@@ -44,6 +44,21 @@
     background-size: 75%;
     background-position: right bottom;
   }
+
+  @media (min-width: 320px) and (max-width: 416px) {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 5%;
+
+    .certificate__textblock {
+      width: 100%;
+    }
+
+    .certificate__card {
+      margin: 10px auto 0;
+    }
+
+  }
 }
 
 .certificate__textblock {
@@ -281,15 +296,21 @@
     position: absolute;
     top: 11px;
     left: 10px;
+    width: 75px;
+    height: 40px;
 
     @include tablet {
       top: size-tablet(11px);
       left: size-tablet(10px);
+      width: size-tablet(75px);
+      height: size-tablet(40px);
     }
 
     @include mobile {
       top: size-mobile(11px);
       left: size-mobile(10px);
+      width: size-mobile(75px);
+      height: size-mobile(40px);
     }
   }
 

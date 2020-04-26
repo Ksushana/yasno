@@ -97,6 +97,15 @@
     top: -17px;
   }
 
+  @include tablet {
+    padding-left: 0;
+    text-align: center;
+
+    &:before {
+      left: 24%;
+    }
+  }
+
   @include mobile {
     padding-top: 13px;
     padding-left: 0;

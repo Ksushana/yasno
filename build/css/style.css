@@ -3678,6 +3678,23 @@ button {
   }
 }
 
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 0 5%;
+  }
+  .certificate .certificate__textblock {
+    width: 100%;
+  }
+  .certificate .certificate__card {
+    margin: 10px auto 0;
+  }
+}
+
 .certificate__textblock {
   width: 30%;
   position: relative;
@@ -3967,12 +3984,16 @@ button {
   position: absolute;
   top: 11px;
   left: 10px;
+  width: 75px;
+  height: 40px;
 }
 
 @media (max-width: 991px) {
   .certificate__card img {
     top: 0.47143rem;
     left: 0.42857rem;
+    width: 3.21429rem;
+    height: 1.71429rem;
   }
 }
 
@@ -3980,6 +4001,8 @@ button {
   .certificate__card img {
     top: 0.34048rem;
     left: 0.30952rem;
+    width: 2.32143rem;
+    height: 1.2381rem;
   }
 }
 
@@ -4096,9 +4119,23 @@ button {
   }
 }
 
+.header__links li:first-of-type span:last-child {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header__links li:first-of-type span:first-child {
+    display: none;
+  }
+  .header__links li:first-of-type span:last-child {
+    display: block;
+  }
+}
+
 .header__links li a {
   padding: 0 10px 0 9px;
   letter-spacing: 0.2px;
+  display: block;
 }
 
 @media (max-width: 767px) {
@@ -4164,6 +4201,10 @@ button {
   padding: 30px 11.1%;
   -webkit-box-shadow: 0px -1px 0px #E0E0E0;
           box-shadow: 0px -1px 0px #E0E0E0;
+}
+
+.footer--order {
+  background-color: #ffffff;
 }
 
 @media (max-width: 991px) {
@@ -4739,6 +4780,16 @@ button {
   top: -17px;
 }
 
+@media (max-width: 991px) {
+  .howitworks__howitlooks {
+    padding-left: 0;
+    text-align: center;
+  }
+  .howitworks__howitlooks:before {
+    left: 24%;
+  }
+}
+
 @media (max-width: 767px) {
   .howitworks__howitlooks {
     padding-top: 13px;
@@ -4931,7 +4982,7 @@ button {
 
 .questions__link {
   display: block;
-  width: 350px;
+  width: 91%;
   margin: 120px auto 126px;
 }
 
@@ -4957,6 +5008,10 @@ button {
     padding: 0;
     margin-top: 50px;
   }
+}
+
+.container__contacts {
+  background-color: #ffffff;
 }
 
 .contact-page {
@@ -5032,8 +5087,8 @@ button {
   background-color: #43A7F6;
   position: absolute;
   top: -10px;
-  -webkit-box-shadow: 0px 0px 0px 4px #f0f4f7;
-  box-shadow: 0px 0px 0px 4px #f0f4f7;
+  -webkit-box-shadow: 0px 0px 0px 4px #ffffff;
+  box-shadow: 0px 0px 0px 4px #ffffff;
 }
 
 .contact-page__steps-cover .contact-page__steps .line .line__dot--choose {
@@ -5067,8 +5122,8 @@ button {
   right: -15px;
   top: -6px;
   background-color: #EDEDF9;
-  -webkit-box-shadow: inset 0px 0px 0px 4px #f0f4f7;
-  box-shadow: inset 0px 0px 0px 4px #f0f4f7;
+  -webkit-box-shadow: inset 0px 0px 0px 4px #ffffff;
+  box-shadow: inset 0px 0px 0px 4px #ffffff;
 }
 
 .contact-page__steps-cover .contact-page__steps .contact-page__step-cover {
@@ -5174,7 +5229,7 @@ button {
   content: "";
   position: absolute;
   border-radius: 4px;
-  background-color: #F0F4F7;
+  background-color: #ffffff;
   width: 22px;
   height: 22px;
   top: -3px;
@@ -5190,6 +5245,9 @@ button {
 
 .contact-page__form-cover form .button__blue {
   border: none;
+  cursor: pointer;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 @media (max-width: 991px) {
@@ -5207,6 +5265,10 @@ button {
   }
 }
 
+.contact-page__form-cover form .button__blue:hover {
+  opacity: 0.6;
+}
+
 .contact-page__form-cover .contact-page__input {
   height: 39px;
   font-size: 16px;
@@ -5219,7 +5281,7 @@ button {
   border: 1px solid #BABABA;
   box-sizing: border-box;
   border-radius: 4px;
-  background-color: #F0F4F7;
+  background-color: #ffffff;
   margin: 8px 0 9px;
   outline: none;
   padding: 0 12px;
@@ -5265,5 +5327,21 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .contact-page__form.certificate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contact-page__form.certificate .certificate__textblock {
+    width: 100%;
+  }
+  .contact-page__form.certificate .certificate__card {
+    margin: 10px auto 0;
   }
 }

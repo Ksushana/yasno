@@ -22,7 +22,10 @@ html( lang="ru" )
 
       nav.header__links
         ul
-          li: +link-text( "Терапевты", "#", "header__link" )
+          li
+            a.header__link(href="#")
+              span Психотерапевты
+              span Терапевты
           li: +link-text( "Блог", "#","header__link" )
           li: +link-text( "Вопросы-ответы", "#","header__link header__link--nomobile" )
       button.header__login Вход <span>и регистрация</span>
@@ -176,13 +179,13 @@ html( lang="ru" )
 
       .footer__links.footer__block
         ul
-          li Психотерапевты
-          li Блог
-          li Вопросы-ответы
+          li: +link-text( "Психотерапевты", "#", "footer__link" )
+          li: +link-text( "Блог", "#", "footer__link" )
+          li: +link-text( "Вопросы-ответы", "#", "footer__link" )
           li Пользовательское соглашение
           li Политика в отношении обработки и защиты персональных данных
-          li Для терапевтов
-          li Проверка совместимости
+          li: +link-text( "Для терапевтов", "#", "footer__link" )
+          li: +link-text( "Проверка совместимости", "#", "footer__link" )
 
       .footer__contacts.footer__block
         span Мы на связи:
