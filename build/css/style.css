@@ -4848,6 +4848,13 @@ button {
   height: 143px;
 }
 
+.dotted {
+  background-image: url(./../img/dotts.svg);
+  width: 20px;
+  height: 2px;
+  background-color: red;
+}
+
 .questions__header {
   font-weight: 500;
   font-size: 36px;
