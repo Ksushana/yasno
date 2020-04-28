@@ -130,5 +130,19 @@
   font-size: 12px;
   line-height: 12px;
   height: 22px;
-  padding: 5px 0;
+  padding: 0px 0;
+  display: inline-block;
+
+  .heart {
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    background-image: url("./../img/heart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    top: 3px;
+    left: -6px;
+  }
 }
