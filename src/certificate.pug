@@ -50,8 +50,8 @@ html( lang="ru" )
 
           .contact-page__form-cover
             form.contact-page__form
-              input.contact-page__input( type="text" name="from_name" placeholder="От кого")
-              input.contact-page__input( type="text" name="to_name" placeholder="Кому")
+              input.contact-page__input( type="text" name="from_name" placeholder="От кого" maxlength="11")
+              input.contact-page__input( type="text" name="to_name" placeholder="Кому" maxlength="11")
               input.contact-page__input( type="email" name="user_email" placeholder="Ваша эл. почта")
               p На вашу почту придет сертификат
               input.contact-page__checkbox( type="checkbox" id="agree" name="agree" value="Согласен с условиями договора-оферты" )
@@ -67,8 +67,8 @@ html( lang="ru" )
                 .certificate__card
                   img(src="img/logo.png" width="75" height="40" alt="logo")
                   +svg-present
-                  p Промокод <span>АА8ФА8C</span> / <span>5 сессий<span>
-                  p.certificate__card--names <span>Владимир</span> → <span>Виктория</span>
+                  p Промокод <span class="certificate__num">АА8ФА8C</span> / <span>5 сессий<span>
+                  p.certificate__card--names <span class="certificate__sender">Владимир</span> <span>Виктория</span>
                 p.certificate__turn Зарегестрироваться до 21 мая 2021, использовать до 21 мая 2023
               input.button__blue( type="submit" value="Оплатить 2 850 ₽")
 
@@ -83,8 +83,8 @@ html( lang="ru" )
               .certificate__card
                 img(src="img/logo.png" width="75" height="40" alt="logo")
                 +svg-present
-                p Промокод <span>АА8ФА8C</span> / <span>5 сессий<span>
-                p.certificate__card--names <span>Владимир</span> → <span>Виктория</span>
+                p Промокод <span class="certificate__num">АА8ФА8C</span> / <span>5 сессий<span>
+                p.certificate__card--names <span class="certificate__sender">Владимир</span> <span>Виктория</span>
               p.certificate__turn Зарегестрироваться до 21 мая 2021, использовать до 21 мая 2023
 
 
@@ -117,6 +117,7 @@ html( lang="ru" )
           li Политика в отношении обработки и защиты персональных данных
           li: +link-text( "Для терапевтов", "#", "footer__link" )
           li: +link-text( "Проверка совместимости", "#", "footer__link" )
+          li: +link-text( "Подарить сертификат 💝", "#", "footer__link" )
 
       .footer__contacts.footer__block
         span Мы на связи:

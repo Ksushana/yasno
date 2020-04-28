@@ -4026,7 +4026,7 @@ button {
 
 .certificate__card p {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 28px;
   margin: 0 auto;
 }
@@ -4043,6 +4043,10 @@ button {
     font-size: 0.55714rem;
     line-height: 0.86667rem;
   }
+}
+
+.certificate__card p:last-child {
+  font-weight: 500;
 }
 
 .certificate__turn {
@@ -4068,6 +4072,82 @@ button {
   .certificate__turn {
     font-size: 0.30952rem !important;
     right: -8.97619rem;
+  }
+}
+
+.certificate__num {
+  background: rgba(214, 215, 216, 0.4);
+  border-radius: 8px;
+  display: inline-block;
+  padding: 0 6px;
+}
+
+@media (max-width: 991px) {
+  .certificate__num {
+    border-radius: 0.34286rem;
+    padding: 0 0.25714rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificate__num {
+    border-radius: 0.24762rem;
+    padding: 0 0.18571rem;
+  }
+}
+
+.certificate__sender {
+  position: relative;
+  margin-right: 35px;
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .certificate__sender {
+    margin-right: 1.5rem;
+    -webkit-transform: translateX(-0.34286rem);
+            transform: translateX(-0.34286rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .certificate__sender {
+    margin-right: 1.08333rem;
+    -webkit-transform: translateX(-0.24762rem);
+            transform: translateX(-0.24762rem);
+  }
+}
+
+.certificate__sender::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 10px;
+  background-image: url("./../img/card-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10px;
+  right: -35px;
+}
+
+@media (max-width: 991px) {
+  .certificate__sender::after {
+    width: 1.2rem;
+    height: 0.42857rem;
+    top: 0.42857rem;
+    right: -1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificate__sender::after {
+    width: 0.86667rem;
+    height: 0.30952rem;
+    top: 0.30952rem;
+    right: -1.08333rem;
   }
 }
 
@@ -4850,9 +4930,30 @@ button {
 
 .dotted {
   background-image: url(./../img/dotts.svg);
-  width: 20px;
+  width: 35%;
   height: 2px;
-  background-color: red;
+  position: absolute;
+  top: 87px;
+  right: -73px;
+  z-index: 10;
+}
+
+@media (max-width: 1130px) {
+  .dotted {
+    width: 23%;
+  }
+}
+
+@media (max-width: 991px) {
+  .dotted {
+    right: -48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dotted {
+    display: none;
+  }
 }
 
 .questions__header {
@@ -4880,6 +4981,12 @@ button {
 .questions__accord {
   margin: 0px 7.4%;
   padding-top: 27px;
+}
+
+.questions__accord ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media (max-width: 767px) {
@@ -5016,13 +5123,14 @@ button {
 
 .questions__link {
   display: block;
-  width: 91%;
+  width: 350px;
   margin: 120px auto 126px;
 }
 
 @media (max-width: 767px) {
   .questions__link {
     margin: 65px auto 75px;
+    width: 91%;
   }
 }
 
