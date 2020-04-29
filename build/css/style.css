@@ -3520,6 +3520,7 @@ html {
      -moz-text-size-adjust: none;
       -ms-text-size-adjust: none;
           text-size-adjust: none;
+  scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
   -ms-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -4604,6 +4605,7 @@ button {
 
 .gift {
   padding-bottom: 4.5rem;
+  padding-top: 20px;
 }
 
 @media (max-width: 991px) {
