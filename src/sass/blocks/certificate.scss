@@ -1,5 +1,5 @@
 .certificate {
-  border: 0.593333px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 8px;
   width: 735px;
@@ -15,7 +15,6 @@
   position: relative;
 
   @include tablet {
-    border: size-tablet(0.593333px) solid #FFFFFF;
     box-sizing: border-box;
     border-radius: size-tablet(8px);
     width: size-tablet(735px);
@@ -31,23 +30,7 @@
   }
 
   @include mobile {
-    border: size-mobile(0.593333px) solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: size-mobile(8px);
-    width: size-mobile(735px);
-    margin: 0 auto;
-    background-color: $color-white;
-    display: flex;
-    justify-content: space-between;
-    padding: size-mobile(49px) size-mobile(28px) size-mobile(40px);
-    background-image: url("./../img/blue.png");
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: right bottom;
-  }
 
-  @media (min-width: 320px) and (max-width: 416px) {
-    border: size-small(0.593333px) solid #FFFFFF;
     border-radius: size-small(8px);
     width: size-small(735px);
     padding: size-small(49px) size-small(28px) size-small(40px);
@@ -73,13 +56,7 @@
   }
 
   @include mobile {
-    font-size: size-mobile(36px);
-    line-height: size-mobile(38px);
-    margin: size-mobile(5px) size-mobile(27px);
-    font-weight: 500;
-  }
 
-  @media (min-width: 320px) and (max-width: 416px) {
     font-size: size-small(36px);
     line-height: size-small(38px);
     margin: size-small(5px) size-small(27px);
@@ -110,17 +87,7 @@
   }
 
   @include mobile {
-    font-size: size-mobile(12px) !important;
-    font-weight: 600;
-    margin-left: size-mobile(28px);
-    margin-top: size-mobile(21px);
-    margin-bottom: size-mobile(5px);
-    text-transform: uppercase;
-    letter-spacing: size-mobile(1.8px);
-    position: relative;
-  }
 
-  @media (min-width: 320px) and (max-width: 416px) {
     font-size: size-small(12px) !important;
     font-weight: 600;
     margin-left: size-small(28px);
@@ -149,21 +116,13 @@
     }
 
     @include mobile {
-      position: absolute;
-      width: size-mobile(1px);
-      height: size-mobile(34px);
-      background-color: $color-blue-bright;
-      left: size-mobile(-23px);
-      top: size-mobile(47px);
-    }
 
-    @media (min-width: 320px) and (max-width: 416px) {
       position: absolute;
       width: size-small(1px);
       height: size-small(34px);
       background-color: $color-blue-bright;
       left: size-small(-23px);
-      top: size-small(47px);
+      top: 130%;
     }
 
     &::before {
@@ -187,16 +146,7 @@
       }
 
       @include mobile {
-        position: absolute;
-        width: size-mobile(7px);
-        height: size-mobile(7px);
-        background-color: $color-blue-bright;
-        border-radius: 50%;
-        top: size-mobile(-3px);
-        right: size-mobile(-3px);
-      }
 
-      @media (min-width: 320px) and (max-width: 416px) {
         position: absolute;
         width: size-small(7px);
         height: size-small(7px);
@@ -228,16 +178,7 @@
       }
 
       @include mobile {
-        position: absolute;
-        width: size-mobile(7px);
-        height: size-mobile(7px);
-        background-color: $color-blue-bright;
-        border-radius: 50%;
-        bottom: size-mobile(-3px);
-        right: size-mobile(-3px);
-      }
 
-      @media (min-width: 320px) and (max-width: 416px) {
         position: absolute;
         width: size-small(7px);
         height: size-small(7px);
@@ -272,17 +213,7 @@
   }
 
   @include mobile {
-    font-size: size-mobile(16px);
-    margin-top: size-mobile(1px);
 
-    letter-spacing: size-mobile(0.3px);
-    line-height: size-mobile(22px);
-    @include list-reset;
-    padding-left: size-mobile(28px);
-    position: relative;
-  }
-
-  @media (min-width: 320px) and (max-width: 416px) {
     font-size: size-small(16px);
     margin-top: size-small(1px);
 
@@ -301,10 +232,7 @@
     }
 
     @include mobile {
-      margin-bottom: size-mobile(12px);
-    }
 
-    @media (min-width: 320px) and (max-width: 416px) {
       margin-bottom: size-small(12px);
     }
   }
@@ -336,19 +264,7 @@
   }
 
   @include mobile {
-    box-shadow: 0 size-mobile(7px) size-mobile(44px) rgba(193, 193, 193, 0.4);
-    border-radius: size-mobile(30px);
-    position: relative;
-    width: 56.5%;
-    height: size-mobile(250px);
-    display: flex;
-    flex-direction: column;
-    margin-right: size-mobile(34px);
-    z-index: 10;
-    background-color: $color-white;
-  }
 
-  @media (min-width: 320px) and (max-width: 416px) {
     box-shadow: 0 size-small(7px) size-small(44px) rgba(193, 193, 193, 0.4);
     border-radius: size-small(30px);
     position: relative;
@@ -376,13 +292,7 @@
     }
 
     @include mobile {
-      top: size-mobile(11px);
-      left: size-mobile(10px);
-      width: size-mobile(75px);
-      height: size-mobile(40px);
-    }
 
-    @media (min-width: 320px) and (max-width: 416px) {
       top: size-small(11px);
       left: size-small(10px);
       width: size-small(75px);
@@ -399,10 +309,7 @@
     }
 
     @include mobile {
-      margin: size-mobile(12px) auto size-mobile(8px);
-    }
 
-    @media (min-width: 320px) and (max-width: 416px) {
       margin: size-small(12px) auto size-small(8px);
     }
   }
@@ -412,6 +319,7 @@
     font-size: 17px;
     line-height: 28px;
     margin: 0 auto;
+    color:#282828 !important;
 
     @include tablet {
       font-size: size-tablet(18px);
@@ -419,11 +327,7 @@
     }
 
     @include mobile {
-      font-size: size-mobile(18px);
-      line-height: size-mobile(28px);
-    }
 
-    @media (min-width: 320px) and (max-width: 416px) {
       font-size: size-small(18px) !important;
       line-height: size-small(28px) !important;
     }
@@ -453,12 +357,7 @@
   }
 
   @include mobile {
-    font-size: size-mobile(10px) !important;
-    right: size-mobile(-137px);
-    top: size-mobile(155px);
-  }
 
-  @media (min-width: 320px) and (max-width: 416px) {
     font-size: size-small(10px) !important;
     right: size-small(-137px);
     top: size-small(155px);
@@ -477,11 +376,7 @@
   }
 
   @include mobile {
-    border-radius: size-mobile(8px);
-    padding: 0 size-mobile(6px);
-  }
 
-  @media (min-width: 320px) and (max-width: 416px) {
     border-radius: size-small(8px);
     padding: 0 size-small(6px);
   }
@@ -499,11 +394,7 @@
   }
 
   @include mobile {
-    margin-right: size-mobile(35px);
-    transform: translateX(size-mobile(-8px));
-  }
 
-  @media (min-width: 320px) and (max-width: 416px) {
     margin-right: size-small(35px);
     transform: translateX(size-small(-8px));
   }
@@ -528,13 +419,7 @@
     }
 
     @include mobile {
-      width: size-mobile(28px);
-      height: size-mobile(10px);
-      top: size-mobile(10px);
-      right: size-mobile(-35px);
-    }
 
-    @media (min-width: 320px) and (max-width: 416px) {
       width: size-small(28px);
       height: size-small(10px);
       top: size-small(10px);
@@ -556,11 +441,7 @@
     }
 
     @include mobile {
-      min-width: size-mobile(104px);
-      height: size-mobile(28px);
-    }
 
-    @media (min-width: 320px) and (max-width: 416px) {
       min-width: size-small(104px);
       height: size-small(28px);
     }

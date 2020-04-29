@@ -3526,12 +3526,18 @@ html {
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 21px;
+  font-size: 2.11694vw;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 2.73438vw;
+  }
 }
 
 @media (max-width: 767px) {
   html {
-    font-size: 17px;
+    font-size: 6.5625vw;
   }
 }
 
@@ -3612,7 +3618,7 @@ button {
 
 /* Blocks */
 .certificate {
-  border: 0.593333px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
@@ -3635,11 +3641,10 @@ button {
 
 @media (max-width: 991px) {
   .certificate {
-    border: 0.02825rem solid #FFFFFF;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border-radius: 0.38095rem;
-    width: 35rem;
+    border-radius: 1.04167vw;
+    width: 95.70312vw;
     margin: 0 auto;
     background-color: #ffffff;
     display: -webkit-box;
@@ -3648,7 +3653,7 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2.33333rem 1.33333rem 1.90476rem;
+    padding: 6.38021vw 3.64583vw 5.20833vw;
     background-image: url("./../img/blue.png");
     background-repeat: no-repeat;
     background-size: 75%;
@@ -3658,33 +3663,9 @@ button {
 
 @media (max-width: 767px) {
   .certificate {
-    border: 0.01837rem solid #FFFFFF;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 0.24762rem;
-    width: 22.75rem;
-    margin: 0 auto;
-    background-color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 1.51667rem 0.86667rem 1.2381rem;
-    background-image: url("./../img/blue.png");
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: right bottom;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate {
-    border: 0.01413rem solid #FFFFFF;
-    border-radius: 0.19048rem;
-    width: 17.5rem;
-    padding: 1.16667rem 0.66667rem 0.95238rem;
+    border-radius: 0.15238rem;
+    width: 14rem;
+    padding: 0.93333rem 0.53333rem 0.7619rem;
   }
 }
 
@@ -3702,27 +3683,18 @@ button {
 
 @media (max-width: 991px) {
   .certificate__header {
-    font-size: 1.71429rem;
-    line-height: 1.80952rem;
-    margin: 0.2381rem 1.28571rem;
+    font-size: 4.6875vw;
+    line-height: 4.94792vw;
+    margin: 0.65104vw 3.51562vw;
     font-weight: 500;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__header {
-    font-size: 1.11429rem;
-    line-height: 1.17619rem;
-    margin: 0.15476rem 0.83571rem;
-    font-weight: 500;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__header {
-    font-size: 0.85714rem;
-    line-height: 0.90476rem;
-    margin: 0.11905rem 0.64286rem;
+    font-size: 0.68571rem;
+    line-height: 0.72381rem;
+    margin: 0.09524rem 0.51429rem;
     font-weight: 500;
   }
 }
@@ -3741,39 +3713,26 @@ button {
 
 @media (max-width: 991px) {
   .certificate__question {
-    font-size: 0.57143rem !important;
+    font-size: 1.5625vw !important;
     font-weight: 600;
-    margin-left: 1.33333rem;
-    margin-top: 1rem;
-    margin-bottom: 0.2381rem;
+    margin-left: 3.64583vw;
+    margin-top: 2.73438vw;
+    margin-bottom: 0.65104vw;
     text-transform: uppercase;
-    letter-spacing: 0.08571rem;
+    letter-spacing: 0.23438vw;
     position: relative;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__question {
-    font-size: 0.37143rem !important;
+    font-size: 0.22857rem !important;
     font-weight: 600;
-    margin-left: 0.86667rem;
-    margin-top: 0.65rem;
-    margin-bottom: 0.15476rem;
+    margin-left: 0.53333rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.09524rem;
     text-transform: uppercase;
-    letter-spacing: 0.05571rem;
-    position: relative;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__question {
-    font-size: 0.28571rem !important;
-    font-weight: 600;
-    margin-left: 0.66667rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.11905rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04286rem;
+    letter-spacing: 0.03429rem;
     position: relative;
   }
 }
@@ -3790,33 +3749,22 @@ button {
 @media (max-width: 991px) {
   .certificate__question .certificate__dots {
     position: absolute;
-    width: 0.04762rem;
-    height: 1.61905rem;
+    width: 0.13021vw;
+    height: 4.42708vw;
     background-color: #43A7F6;
-    left: -1.09524rem;
-    top: 2.2381rem;
+    left: -2.99479vw;
+    top: 6.11979vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__question .certificate__dots {
     position: absolute;
-    width: 0.03095rem;
-    height: 1.05238rem;
+    width: 0.01905rem;
+    height: 0.64762rem;
     background-color: #43A7F6;
-    left: -0.7119rem;
-    top: 1.45476rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__question .certificate__dots {
-    position: absolute;
-    width: 0.02381rem;
-    height: 0.80952rem;
-    background-color: #43A7F6;
-    left: -0.54762rem;
-    top: 1.11905rem;
+    left: -0.4381rem;
+    top: 130%;
   }
 }
 
@@ -3834,36 +3782,24 @@ button {
 @media (max-width: 991px) {
   .certificate__question .certificate__dots::before {
     position: absolute;
-    width: 0.33333rem;
-    height: 0.33333rem;
+    width: 0.91146vw;
+    height: 0.91146vw;
     background-color: #43A7F6;
     border-radius: 50%;
-    top: -0.14286rem;
-    right: -0.14286rem;
+    top: -0.39062vw;
+    right: -0.39062vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__question .certificate__dots::before {
     position: absolute;
-    width: 0.21667rem;
-    height: 0.21667rem;
+    width: 0.13333rem;
+    height: 0.13333rem;
     background-color: #43A7F6;
     border-radius: 50%;
-    top: -0.09286rem;
-    right: -0.09286rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__question .certificate__dots::before {
-    position: absolute;
-    width: 0.16667rem;
-    height: 0.16667rem;
-    background-color: #43A7F6;
-    border-radius: 50%;
-    top: -0.07143rem;
-    right: -0.07143rem;
+    top: -0.05714rem;
+    right: -0.05714rem;
   }
 }
 
@@ -3881,36 +3817,24 @@ button {
 @media (max-width: 991px) {
   .certificate__question .certificate__dots::after {
     position: absolute;
-    width: 0.33333rem;
-    height: 0.33333rem;
+    width: 0.91146vw;
+    height: 0.91146vw;
     background-color: #43A7F6;
     border-radius: 50%;
-    bottom: -0.14286rem;
-    right: -0.14286rem;
+    bottom: -0.39062vw;
+    right: -0.39062vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__question .certificate__dots::after {
     position: absolute;
-    width: 0.21667rem;
-    height: 0.21667rem;
+    width: 0.13333rem;
+    height: 0.13333rem;
     background-color: #43A7F6;
     border-radius: 50%;
-    bottom: -0.09286rem;
-    right: -0.09286rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__question .certificate__dots::after {
-    position: absolute;
-    width: 0.16667rem;
-    height: 0.16667rem;
-    background-color: #43A7F6;
-    border-radius: 50%;
-    bottom: -0.07143rem;
-    right: -0.07143rem;
+    bottom: -0.05714rem;
+    right: -0.05714rem;
   }
 }
 
@@ -3928,42 +3852,28 @@ button {
 
 @media (max-width: 991px) {
   .certificate__steps {
-    font-size: 0.7619rem;
-    margin-top: 0.04762rem;
-    letter-spacing: 0.01429rem;
-    line-height: 1.04762rem;
+    font-size: 2.08333vw;
+    margin-top: 0.13021vw;
+    letter-spacing: 0.03906vw;
+    line-height: 2.86458vw;
     margin: 0;
     padding: 0;
     list-style: none;
-    padding-left: 1.33333rem;
+    padding-left: 3.64583vw;
     position: relative;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__steps {
-    font-size: 0.49524rem;
-    margin-top: 0.03095rem;
-    letter-spacing: 0.00929rem;
-    line-height: 0.68095rem;
+    font-size: 0.30476rem;
+    margin-top: 0.01905rem;
+    letter-spacing: 0.00571rem;
+    line-height: 0.41905rem;
     margin: 0;
     padding: 0;
     list-style: none;
-    padding-left: 0.86667rem;
-    position: relative;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__steps {
-    font-size: 0.38095rem;
-    margin-top: 0.02381rem;
-    letter-spacing: 0.00714rem;
-    line-height: 0.52381rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding-left: 0.66667rem;
+    padding-left: 0.53333rem;
     position: relative;
   }
 }
@@ -3974,19 +3884,13 @@ button {
 
 @media (max-width: 991px) {
   .certificate__steps li {
-    margin-bottom: 0.57143rem;
+    margin-bottom: 1.5625vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__steps li {
-    margin-bottom: 0.37143rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__steps li {
-    margin-bottom: 0.28571rem;
+    margin-bottom: 0.22857rem;
   }
 }
 
@@ -4011,12 +3915,12 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card {
-    -webkit-box-shadow: 0 0.33333rem 2.09524rem rgba(193, 193, 193, 0.4);
-            box-shadow: 0 0.33333rem 2.09524rem rgba(193, 193, 193, 0.4);
-    border-radius: 1.42857rem;
+    -webkit-box-shadow: 0 0.91146vw 5.72917vw rgba(193, 193, 193, 0.4);
+            box-shadow: 0 0.91146vw 5.72917vw rgba(193, 193, 193, 0.4);
+    border-radius: 3.90625vw;
     position: relative;
     width: 56.5%;
-    height: 11.90476rem;
+    height: 32.55208vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4024,7 +3928,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 1.61905rem;
+    margin-right: 4.42708vw;
     z-index: 10;
     background-color: #ffffff;
   }
@@ -4032,12 +3936,12 @@ button {
 
 @media (max-width: 767px) {
   .certificate__card {
-    -webkit-box-shadow: 0 0.21667rem 1.3619rem rgba(193, 193, 193, 0.4);
-            box-shadow: 0 0.21667rem 1.3619rem rgba(193, 193, 193, 0.4);
-    border-radius: 0.92857rem;
+    -webkit-box-shadow: 0 0.13333rem 0.8381rem rgba(193, 193, 193, 0.4);
+            box-shadow: 0 0.13333rem 0.8381rem rgba(193, 193, 193, 0.4);
+    border-radius: 0.57143rem;
     position: relative;
     width: 56.5%;
-    height: 7.7381rem;
+    height: 4.7619rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4045,28 +3949,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 1.05238rem;
-    z-index: 10;
-    background-color: #ffffff;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__card {
-    -webkit-box-shadow: 0 0.16667rem 1.04762rem rgba(193, 193, 193, 0.4);
-            box-shadow: 0 0.16667rem 1.04762rem rgba(193, 193, 193, 0.4);
-    border-radius: 0.71429rem;
-    position: relative;
-    width: 56.5%;
-    height: 5.95238rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 0.80952rem;
+    margin-right: 0.64762rem;
     z-index: 10;
     background-color: #ffffff;
   }
@@ -4082,28 +3965,19 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card img {
-    top: 0.52381rem;
-    left: 0.47619rem;
-    width: 3.57143rem;
-    height: 1.90476rem;
+    top: 1.43229vw;
+    left: 1.30208vw;
+    width: 9.76562vw;
+    height: 5.20833vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__card img {
-    top: 0.34048rem;
-    left: 0.30952rem;
-    width: 2.32143rem;
-    height: 1.2381rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__card img {
-    top: 0.2619rem;
-    left: 0.2381rem;
-    width: 1.78571rem;
-    height: 0.95238rem;
+    top: 0.20952rem;
+    left: 0.19048rem;
+    width: 1.42857rem;
+    height: 0.7619rem;
   }
 }
 
@@ -4114,19 +3988,13 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card svg {
-    margin: 0.57143rem auto 0.38095rem;
+    margin: 1.5625vw auto 1.04167vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__card svg {
-    margin: 0.37143rem auto 0.24762rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__card svg {
-    margin: 0.28571rem auto 0.19048rem;
+    margin: 0.22857rem auto 0.15238rem;
   }
 }
 
@@ -4135,26 +4003,20 @@ button {
   font-size: 17px;
   line-height: 28px;
   margin: 0 auto;
+  color: #282828 !important;
 }
 
 @media (max-width: 991px) {
   .certificate__card p {
-    font-size: 0.85714rem;
-    line-height: 1.33333rem;
+    font-size: 2.34375vw;
+    line-height: 3.64583vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__card p {
-    font-size: 0.55714rem;
-    line-height: 0.86667rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__card p {
-    font-size: 0.42857rem !important;
-    line-height: 0.66667rem !important;
+    font-size: 0.34286rem !important;
+    line-height: 0.53333rem !important;
   }
 }
 
@@ -4182,25 +4044,17 @@ button {
 
 @media (max-width: 991px) {
   .certificate__turn {
-    font-size: 0.47619rem;
-    right: -6.52381rem;
-    top: 7.38095rem;
+    font-size: 1.30208vw;
+    right: -17.83854vw;
+    top: 20.18229vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__turn {
-    font-size: 0.30952rem !important;
-    right: -4.24048rem;
-    top: 4.79762rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__turn {
-    font-size: 0.2381rem !important;
-    right: -3.2619rem;
-    top: 3.69048rem;
+    font-size: 0.19048rem !important;
+    right: -2.60952rem;
+    top: 2.95238rem;
   }
 }
 
@@ -4213,22 +4067,15 @@ button {
 
 @media (max-width: 991px) {
   .certificate__num {
-    border-radius: 0.38095rem;
-    padding: 0 0.28571rem;
+    border-radius: 1.04167vw;
+    padding: 0 0.78125vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__num {
-    border-radius: 0.24762rem;
-    padding: 0 0.18571rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__num {
-    border-radius: 0.19048rem;
-    padding: 0 0.14286rem;
+    border-radius: 0.15238rem;
+    padding: 0 0.11429rem;
   }
 }
 
@@ -4242,25 +4089,17 @@ button {
 
 @media (max-width: 991px) {
   .certificate__sender {
-    margin-right: 1.66667rem;
-    -webkit-transform: translateX(-0.38095rem);
-            transform: translateX(-0.38095rem);
+    margin-right: 4.55729vw;
+    -webkit-transform: translateX(-1.04167vw);
+            transform: translateX(-1.04167vw);
   }
 }
 
 @media (max-width: 767px) {
   .certificate__sender {
-    margin-right: 1.08333rem;
-    -webkit-transform: translateX(-0.24762rem);
-            transform: translateX(-0.24762rem);
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__sender {
-    margin-right: 0.83333rem;
-    -webkit-transform: translateX(-0.19048rem);
-            transform: translateX(-0.19048rem);
+    margin-right: 0.66667rem;
+    -webkit-transform: translateX(-0.15238rem);
+            transform: translateX(-0.15238rem);
   }
 }
 
@@ -4279,28 +4118,19 @@ button {
 
 @media (max-width: 991px) {
   .certificate__sender::after {
-    width: 1.33333rem;
-    height: 0.47619rem;
-    top: 0.47619rem;
-    right: -1.66667rem;
+    width: 3.64583vw;
+    height: 1.30208vw;
+    top: 1.30208vw;
+    right: -4.55729vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__sender::after {
-    width: 0.86667rem;
-    height: 0.30952rem;
-    top: 0.30952rem;
-    right: -1.08333rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__sender::after {
-    width: 0.66667rem;
-    height: 0.2381rem;
-    top: 0.2381rem;
-    right: -0.83333rem;
+    width: 0.53333rem;
+    height: 0.19048rem;
+    top: 0.19048rem;
+    right: -0.66667rem;
   }
 }
 
@@ -4318,22 +4148,15 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card--names span {
-    min-width: 4.95238rem;
-    height: 1.33333rem;
+    min-width: 13.54167vw;
+    height: 3.64583vw;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__card--names span {
-    min-width: 3.21905rem;
-    height: 0.86667rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .certificate__card--names span {
-    min-width: 2.47619rem;
-    height: 0.66667rem;
+    min-width: 1.98095rem;
+    height: 0.53333rem;
   }
 }
 
@@ -5659,5 +5482,6 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border: 1px solid #ebebeb;
   }
 }

@@ -1,13 +1,23 @@
-
-
-@function size-mobile($size-in-px) {
-  @return $size-in-px / $font-base * 0.65rem;
-}
-
 @function size-tablet($size-in-px) {
   @return $size-in-px / $font-base * 1rem;
 }
 
+@function size-mobile($size-in-px) {
+  @return $size-in-px / $font-base * 1rem;
+}
+
 @function size-small($size-in-px) {
-  @return $size-in-px / $font-base * 0.5rem;
+  @return $size-in-px / $font-base * 0.4rem;
+}
+
+@function size-desktop($size-in-px) {
+  @return $size-in-px / $width-desktop * 100vw;
+}
+
+@function size-tablet($size-in-px) {
+  @return $size-in-px / $width-tablet * 100vw;
+}
+
+@function size-mobile($size-in-px) {
+  @return $size-in-px / $width-min * 100vw;
 }

@@ -11,10 +11,14 @@ html {
   -ms-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-size: 21px;
+  font-size: size-desktop($font-base);
+
+  @include tablet {
+    font-size: size-tablet($font-base);
+  }
 
   @include mobile {
-    font-size: 17px;
+    font-size: size-mobile($font-base);
   }
 }
 
