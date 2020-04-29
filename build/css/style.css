@@ -3611,6 +3611,12 @@ button {
   font-size: 20px;
 }
 
+.button__blue.disabled {
+  background: #D9EDFD;
+  pointer-events: none;
+  cursor: initial;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4319,7 +4325,7 @@ button {
           box-shadow: 0px -1px 0px #E0E0E0;
 }
 
-.footer--order {
+.footer--white {
   background-color: #ffffff;
 }
 
@@ -5483,5 +5489,69 @@ button {
     display: -ms-flexbox;
     display: flex;
     border: 1px solid #ebebeb;
+  }
+}
+
+.congrats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  padding: 111px 0 133px;
+}
+
+@media (max-width: 767px) {
+  .congrats {
+    padding: 35% 0 58%;
+  }
+}
+
+.congrats svg {
+  width: 190px;
+  height: 142px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .congrats svg {
+    width: 142px;
+    height: 106px;
+  }
+}
+
+.congrats h1 {
+  font-size: 60px;
+  line-height: 64px;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 767px) {
+  .congrats h1 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+  }
+}
+
+.congrats p {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .congrats p {
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 14px;
   }
 }

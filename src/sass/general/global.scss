@@ -87,6 +87,12 @@ button {
   line-height: 58px;
   font-weight: 600;
   font-size: 20px;
+
+  &.disabled {
+    background: #D9EDFD;
+    pointer-events: none;
+    cursor: initial;
+  }
 }
 
 * {
