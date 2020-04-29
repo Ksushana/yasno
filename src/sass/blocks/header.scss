@@ -33,7 +33,7 @@
 
   img {
     @include mobile {
-      width: 61.42px;
+      width: auto;
       height: 32px;
     }
   }

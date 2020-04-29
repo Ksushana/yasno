@@ -96,6 +96,7 @@
   text-transform: uppercase;
   letter-spacing: 1.8px;
   position: relative;
+  color: $color-grey-font;
 
   @include tablet {
     font-size: size-tablet(12px) !important;
@@ -441,25 +442,25 @@
   transform: rotate(-90deg);
   top: 155px;
   bottom: 0;
-  right: -121px;
+  right: -137px;
   width: fit-content;
   height: fit-content;
 
   @include tablet {
     font-size: size-tablet(10px);
-    right: size-tablet(-121px);
+    right: size-tablet(-137px);
     top: size-tablet(155px);
   }
 
   @include mobile {
     font-size: size-mobile(10px) !important;
-    right: size-mobile(-121px);
+    right: size-mobile(-137px);
     top: size-mobile(155px);
   }
 
   @media (min-width: 320px) and (max-width: 416px) {
     font-size: size-small(10px) !important;
-    right: size-small(-121px);
+    right: size-small(-137px);
     top: size-small(155px);
   }
 }
@@ -538,6 +539,30 @@
       height: size-small(10px);
       top: size-small(10px);
       right: size-small(-35px);
+    }
+  }
+}
+
+.certificate__card--names {
+  display: flex;
+  span {
+    min-width: 104px;
+    display: block;
+    height: 28px;
+
+    @include tablet {
+      min-width: size-tablet(104px);
+      height: size-tablet(28px);
+    }
+
+    @include mobile {
+      min-width: size-mobile(104px);
+      height: size-mobile(28px);
+    }
+
+    @media (min-width: 320px) and (max-width: 416px) {
+      min-width: size-small(104px);
+      height: size-small(28px);
     }
   }
 }

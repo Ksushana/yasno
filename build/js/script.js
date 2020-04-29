@@ -29007,7 +29007,8 @@ var widgetsTooltip = $.ui.tooltip;
 $(function () {
   $("#accordion").accordion({
     heightStyle: "content",
-    collapsible: true
+    collapsible: true,
+    active: false
   });
 });
 $(() => {

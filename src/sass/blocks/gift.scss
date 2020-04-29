@@ -45,12 +45,16 @@
 
   @include tablet {
     width: 256px;
-    margin-left: 20px;
+    margin-left: 16px;
     margin-right: 0;
   }
 
   &:last-child {
     margin-right: 0;
+
+    @include tablet {
+      margin-right: 16px;
+    }
   }
 
   a {
