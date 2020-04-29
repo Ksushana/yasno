@@ -281,13 +281,12 @@
     position: absolute;
     top: 11px;
     left: 10px;
-    width: 75px;
+    width: auto;
     height: 40px;
 
     @include tablet {
       top: size-tablet(11px);
       left: size-tablet(10px);
-      width: size-tablet(75px);
       height: size-tablet(40px);
     }
 
@@ -295,7 +294,6 @@
 
       top: size-small(11px);
       left: size-small(10px);
-      width: size-small(75px);
       height: size-small(40px);
     }
   }

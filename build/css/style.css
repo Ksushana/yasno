@@ -3966,7 +3966,7 @@ button {
   position: absolute;
   top: 11px;
   left: 10px;
-  width: 75px;
+  width: auto;
   height: 40px;
 }
 
@@ -3974,7 +3974,6 @@ button {
   .certificate__card img {
     top: 1.43229vw;
     left: 1.30208vw;
-    width: 9.76562vw;
     height: 5.20833vw;
   }
 }
@@ -3983,7 +3982,6 @@ button {
   .certificate__card img {
     top: 0.20952rem;
     left: 0.19048rem;
-    width: 1.42857rem;
     height: 0.7619rem;
   }
 }
