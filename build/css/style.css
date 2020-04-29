@@ -5630,6 +5630,7 @@ button {
   margin: 8px 0 9px;
   outline: none;
   padding: 0 12px;
+  -webkit-appearance: none;
 }
 
 .contact-page__certificate.certificate {
