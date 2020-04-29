@@ -3681,18 +3681,10 @@ button {
 
 @media (min-width: 320px) and (max-width: 416px) {
   .certificate {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 90%;
-    margin: 0 5%;
-  }
-  .certificate .certificate__textblock {
-    width: 100%;
-  }
-  .certificate .certificate__card {
-    margin: 10px auto 0;
+    border: 0.01413rem solid #FFFFFF;
+    border-radius: 0.19048rem;
+    width: 17.5rem;
+    padding: 1.16667rem 0.66667rem 0.95238rem;
   }
 }
 
@@ -3722,6 +3714,15 @@ button {
     font-size: 1.11429rem;
     line-height: 1.17619rem;
     margin: 0.15476rem 0.83571rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__header {
+    font-size: 0.85714rem;
+    line-height: 0.90476rem;
+    margin: 0.11905rem 0.64286rem;
     font-weight: 500;
   }
 }
@@ -3763,6 +3764,19 @@ button {
   }
 }
 
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__question {
+    font-size: 0.28571rem !important;
+    font-weight: 600;
+    margin-left: 0.66667rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.11905rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04286rem;
+    position: relative;
+  }
+}
+
 .certificate__question .certificate__dots {
   position: absolute;
   width: 1px;
@@ -3791,6 +3805,17 @@ button {
     background-color: #43A7F6;
     left: -0.7119rem;
     top: 1.45476rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__question .certificate__dots {
+    position: absolute;
+    width: 0.02381rem;
+    height: 0.80952rem;
+    background-color: #43A7F6;
+    left: -0.54762rem;
+    top: 1.11905rem;
   }
 }
 
@@ -3829,6 +3854,18 @@ button {
   }
 }
 
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__question .certificate__dots::before {
+    position: absolute;
+    width: 0.16667rem;
+    height: 0.16667rem;
+    background-color: #43A7F6;
+    border-radius: 50%;
+    top: -0.07143rem;
+    right: -0.07143rem;
+  }
+}
+
 .certificate__question .certificate__dots::after {
   content: "";
   position: absolute;
@@ -3861,6 +3898,18 @@ button {
     border-radius: 50%;
     bottom: -0.09286rem;
     right: -0.09286rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__question .certificate__dots::after {
+    position: absolute;
+    width: 0.16667rem;
+    height: 0.16667rem;
+    background-color: #43A7F6;
+    border-radius: 50%;
+    bottom: -0.07143rem;
+    right: -0.07143rem;
   }
 }
 
@@ -3904,6 +3953,20 @@ button {
   }
 }
 
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__steps {
+    font-size: 0.38095rem;
+    margin-top: 0.02381rem;
+    letter-spacing: 0.00714rem;
+    line-height: 0.52381rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 0.66667rem;
+    position: relative;
+  }
+}
+
 .certificate__steps li {
   margin-bottom: 12px;
 }
@@ -3917,6 +3980,12 @@ button {
 @media (max-width: 767px) {
   .certificate__steps li {
     margin-bottom: 0.37143rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__steps li {
+    margin-bottom: 0.28571rem;
   }
 }
 
@@ -3981,6 +4050,27 @@ button {
   }
 }
 
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__card {
+    -webkit-box-shadow: 0 0.16667rem 1.04762rem rgba(193, 193, 193, 0.4);
+            box-shadow: 0 0.16667rem 1.04762rem rgba(193, 193, 193, 0.4);
+    border-radius: 0.71429rem;
+    position: relative;
+    width: 56.5%;
+    height: 5.95238rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0.80952rem;
+    z-index: 10;
+    background-color: #ffffff;
+  }
+}
+
 .certificate__card img {
   position: absolute;
   top: 11px;
@@ -4007,6 +4097,15 @@ button {
   }
 }
 
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__card img {
+    top: 0.2619rem;
+    left: 0.2381rem;
+    width: 1.78571rem;
+    height: 0.95238rem;
+  }
+}
+
 .certificate__card svg {
   margin: 12px auto 8px;
   width: 53%;
@@ -4021,6 +4120,12 @@ button {
 @media (max-width: 767px) {
   .certificate__card svg {
     margin: 0.37143rem auto 0.24762rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__card svg {
+    margin: 0.28571rem auto 0.19048rem;
   }
 }
 
@@ -4045,6 +4150,13 @@ button {
   }
 }
 
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__card p {
+    font-size: 0.42857rem !important;
+    line-height: 0.66667rem !important;
+  }
+}
+
 .certificate__card p:last-child {
   font-weight: 500;
 }
@@ -4056,22 +4168,38 @@ button {
   color: rgba(40, 40, 40, 0.4);
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  top: 0;
+  top: 155px;
   bottom: 0;
-  right: -290px;
+  right: -121px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media (max-width: 991px) {
   .certificate__turn {
     font-size: 0.42857rem;
-    right: -12.42857rem;
+    right: -5.18571rem;
+    top: 6.64286rem;
   }
 }
 
 @media (max-width: 767px) {
   .certificate__turn {
     font-size: 0.30952rem !important;
-    right: -8.97619rem;
+    right: -3.74524rem;
+    top: 4.79762rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__turn {
+    font-size: 0.2381rem !important;
+    right: -2.88095rem;
+    top: 3.69048rem;
   }
 }
 
@@ -4096,6 +4224,13 @@ button {
   }
 }
 
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__num {
+    border-radius: 0.19048rem;
+    padding: 0 0.14286rem;
+  }
+}
+
 .certificate__sender {
   position: relative;
   margin-right: 35px;
@@ -4117,6 +4252,14 @@ button {
     margin-right: 1.08333rem;
     -webkit-transform: translateX(-0.24762rem);
             transform: translateX(-0.24762rem);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__sender {
+    margin-right: 0.83333rem;
+    -webkit-transform: translateX(-0.19048rem);
+            transform: translateX(-0.19048rem);
   }
 }
 
@@ -4148,6 +4291,15 @@ button {
     height: 0.30952rem;
     top: 0.30952rem;
     right: -1.08333rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .certificate__sender::after {
+    width: 0.66667rem;
+    height: 0.2381rem;
+    top: 0.2381rem;
+    right: -0.83333rem;
   }
 }
 
@@ -4508,10 +4660,13 @@ button {
   width: 115%;
   height: auto;
   position: absolute;
+  max-height: 425px;
   left: 26px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 991px) {
@@ -5448,24 +5603,6 @@ button {
   border: 1px solid #EBEBEB;
 }
 
-@media (min-width: 992px) and (max-width: 1255px) {
-  .contact-page__certificate.certificate {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-page__certificate.certificate .certificate__textblock {
-    width: 100%;
-  }
-  .contact-page__certificate.certificate .certificate__card {
-    margin: 10px auto 0;
-  }
-  .contact-page__certificate.certificate .certificate__turn {
-    right: -360px;
-  }
-}
-
 @media (max-width: 991px) {
   .contact-page__certificate.certificate {
     margin: 40px auto 0;
@@ -5487,22 +5624,5 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 416px) {
-  .contact-page__form.certificate {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    border: 1px solid #EBEBEB;
-  }
-  .contact-page__form.certificate .certificate__textblock {
-    width: 100%;
-  }
-  .contact-page__form.certificate .certificate__card {
-    margin: 10px auto 0;
   }
 }

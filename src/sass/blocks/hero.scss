@@ -53,9 +53,11 @@
     width: 115%;
     height: auto;
     position: absolute;
+    max-height: 425px;
     left: 26px;
     top: 50%;
     transform: translateY(-50%);
+    object-fit: contain;
 
     @include tablet {
       width: 80%;

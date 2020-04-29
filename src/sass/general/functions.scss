@@ -5,3 +5,7 @@
 @function size-tablet($size-in-px) {
   @return $size-in-px / $font-base * 0.9rem;
 }
+
+@function size-small($size-in-px) {
+  @return $size-in-px / $font-base * 0.5rem;
+}

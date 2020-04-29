@@ -251,19 +251,19 @@
   border: 1px solid #EBEBEB;
 
   @media (min-width: 992px) and (max-width: 1255px) {
-    flex-direction: column;
+    // flex-direction: column;
 
-    .certificate__textblock {
-      width: 100%;
-    }
+    // .certificate__textblock {
+    //   width: 100%;
+    // }
 
-    .certificate__card {
-      margin: 10px auto 0;
-    }
+    // .certificate__card {
+    //   margin: 10px auto 0;
+    // }
 
-    .certificate__turn {
-      right: -360px;
-    }
+    // .certificate__turn {
+    //   right: -360px;
+    // }
 
   }
 
@@ -283,18 +283,5 @@
     display: flex;
   }
 
-  @media (min-width: 320px) and (max-width: 416px) {
-    flex-direction: column;
-    width: 100%;
-    border: 1px solid #EBEBEB;
 
-    .certificate__textblock {
-      width: 100%;
-    }
-
-    .certificate__card {
-      margin: 10px auto 0;
-    }
-
-  }
 }
