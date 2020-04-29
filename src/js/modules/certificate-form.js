@@ -7,6 +7,8 @@ $(() => {
   // TODO HERE
   const sessionNumberElements = document.querySelectorAll('.contact-page-header span');
   const sessionNumberElementsCards = document.querySelectorAll('.certificate__sessions-card');
+  const sessionEndElements = document.querySelectorAll('.certificate__sessions-ending');
+  const sessionEndMainElements = document.querySelectorAll('.certificate__sessions-ending-main');
   // TODO HERE
   const sessionPriceElements = document.querySelectorAll('.contact-page__form-cover form .button__blue span');
   const certificateFromNames = document.querySelectorAll('.certificate__card--names span:first-child');
@@ -23,6 +25,20 @@ $(() => {
     3: "8 400",
     5: "14 100",
     10: "28 000",
+  }
+
+  const sessionsEndings = {
+    1: "сессия",
+    3: "сессии",
+    5: "сессий",
+    10: "сессий",
+  }
+
+  const sessionsMainEndings = {
+    1: "сессию",
+    3: "сессии",
+    5: "сессий",
+    10: "сессий",
   }
 
   const renderCertificate = () => {
@@ -49,6 +65,17 @@ $(() => {
     sessionNumberElementsCards.forEach((sessionNumberElementsCard) => {
       sessionNumberElementsCard.innerHTML = sessionsNumber;
     });
+
+    const sessionsEnding = sessionsEndings[sessionsNumber];
+    sessionEndElements.forEach((sessionEndElement) => {
+      sessionEndElement.innerHTML = sessionsEnding;
+    });
+
+    const sessionsMainEnding = sessionsMainEndings[sessionsNumber];
+    sessionEndMainElements.forEach((sessionMainEndElement) => {
+      sessionMainEndElement.innerHTML = sessionsMainEnding;
+    });
+
     const sessionsPrice = sessionsPrices[sessionsNumber];
     sessionPriceElements.forEach((sessionPriceElement) => {
       sessionPriceElement.innerHTML = sessionsPrice;
