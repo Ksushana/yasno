@@ -36,15 +36,19 @@
   }
 
   p {
+    margin-left: auto;
     font-weight: 500;
+    margin-right: auto;
     font-size: 21px;
     line-height: 31px;
     text-align: center;
+    width: 40%;
 
     @include mobile {
       font-size: 17px;
       line-height: 25px;
       margin-top: 14px;
+      width: 80%;
     }
   }
 }
