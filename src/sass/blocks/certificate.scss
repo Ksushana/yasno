@@ -387,6 +387,7 @@
   margin-right: 35px;
   transform: translateX(-8px);
   display: inline-block;
+  text-align: right;
 
   @include tablet {
     margin-right: size-tablet(35px);

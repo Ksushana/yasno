@@ -1,8 +1,12 @@
 .congrats {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: $color-white;
   padding: 111px 0 133px;
+
+  &.show {
+    display: flex;
+  }
 
   @include mobile {
     padding: 35% 0 58%;
