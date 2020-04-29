@@ -3635,11 +3635,11 @@ button {
 
 @media (max-width: 991px) {
   .certificate {
-    border: 0.02543rem solid #FFFFFF;
+    border: 0.02825rem solid #FFFFFF;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border-radius: 0.34286rem;
-    width: 31.5rem;
+    border-radius: 0.38095rem;
+    width: 35rem;
     margin: 0 auto;
     background-color: #ffffff;
     display: -webkit-box;
@@ -3648,7 +3648,7 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2.1rem 1.2rem 1.71429rem;
+    padding: 2.33333rem 1.33333rem 1.90476rem;
     background-image: url("./../img/blue.png");
     background-repeat: no-repeat;
     background-size: 75%;
@@ -3702,9 +3702,9 @@ button {
 
 @media (max-width: 991px) {
   .certificate__header {
-    font-size: 1.54286rem;
-    line-height: 1.62857rem;
-    margin: 0.21429rem 1.15714rem;
+    font-size: 1.71429rem;
+    line-height: 1.80952rem;
+    margin: 0.2381rem 1.28571rem;
     font-weight: 500;
   }
 }
@@ -3741,13 +3741,13 @@ button {
 
 @media (max-width: 991px) {
   .certificate__question {
-    font-size: 0.51429rem !important;
+    font-size: 0.57143rem !important;
     font-weight: 600;
-    margin-left: 1.2rem;
-    margin-top: 0.9rem;
-    margin-bottom: 0.21429rem;
+    margin-left: 1.33333rem;
+    margin-top: 1rem;
+    margin-bottom: 0.2381rem;
     text-transform: uppercase;
-    letter-spacing: 0.07714rem;
+    letter-spacing: 0.08571rem;
     position: relative;
   }
 }
@@ -3790,11 +3790,11 @@ button {
 @media (max-width: 991px) {
   .certificate__question .certificate__dots {
     position: absolute;
-    width: 0.04286rem;
-    height: 1.45714rem;
+    width: 0.04762rem;
+    height: 1.61905rem;
     background-color: #43A7F6;
-    left: -0.98571rem;
-    top: 2.01429rem;
+    left: -1.09524rem;
+    top: 2.2381rem;
   }
 }
 
@@ -3834,12 +3834,12 @@ button {
 @media (max-width: 991px) {
   .certificate__question .certificate__dots::before {
     position: absolute;
-    width: 0.3rem;
-    height: 0.3rem;
+    width: 0.33333rem;
+    height: 0.33333rem;
     background-color: #43A7F6;
     border-radius: 50%;
-    top: -0.12857rem;
-    right: -0.12857rem;
+    top: -0.14286rem;
+    right: -0.14286rem;
   }
 }
 
@@ -3881,12 +3881,12 @@ button {
 @media (max-width: 991px) {
   .certificate__question .certificate__dots::after {
     position: absolute;
-    width: 0.3rem;
-    height: 0.3rem;
+    width: 0.33333rem;
+    height: 0.33333rem;
     background-color: #43A7F6;
     border-radius: 50%;
-    bottom: -0.12857rem;
-    right: -0.12857rem;
+    bottom: -0.14286rem;
+    right: -0.14286rem;
   }
 }
 
@@ -3928,14 +3928,14 @@ button {
 
 @media (max-width: 991px) {
   .certificate__steps {
-    font-size: 0.68571rem;
-    margin-top: 0.04286rem;
-    letter-spacing: 0.01286rem;
-    line-height: 0.94286rem;
+    font-size: 0.7619rem;
+    margin-top: 0.04762rem;
+    letter-spacing: 0.01429rem;
+    line-height: 1.04762rem;
     margin: 0;
     padding: 0;
     list-style: none;
-    padding-left: 1.2rem;
+    padding-left: 1.33333rem;
     position: relative;
   }
 }
@@ -3974,7 +3974,7 @@ button {
 
 @media (max-width: 991px) {
   .certificate__steps li {
-    margin-bottom: 0.51429rem;
+    margin-bottom: 0.57143rem;
   }
 }
 
@@ -4011,12 +4011,12 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card {
-    -webkit-box-shadow: 0 0.3rem 1.88571rem rgba(193, 193, 193, 0.4);
-            box-shadow: 0 0.3rem 1.88571rem rgba(193, 193, 193, 0.4);
-    border-radius: 1.28571rem;
+    -webkit-box-shadow: 0 0.33333rem 2.09524rem rgba(193, 193, 193, 0.4);
+            box-shadow: 0 0.33333rem 2.09524rem rgba(193, 193, 193, 0.4);
+    border-radius: 1.42857rem;
     position: relative;
     width: 56.5%;
-    height: 10.71429rem;
+    height: 11.90476rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4024,7 +4024,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 1.45714rem;
+    margin-right: 1.61905rem;
     z-index: 10;
     background-color: #ffffff;
   }
@@ -4082,10 +4082,10 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card img {
-    top: 0.47143rem;
-    left: 0.42857rem;
-    width: 3.21429rem;
-    height: 1.71429rem;
+    top: 0.52381rem;
+    left: 0.47619rem;
+    width: 3.57143rem;
+    height: 1.90476rem;
   }
 }
 
@@ -4114,7 +4114,7 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card svg {
-    margin: 0.51429rem auto 0.34286rem;
+    margin: 0.57143rem auto 0.38095rem;
   }
 }
 
@@ -4139,8 +4139,8 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card p {
-    font-size: 0.77143rem;
-    line-height: 1.2rem;
+    font-size: 0.85714rem;
+    line-height: 1.33333rem;
   }
 }
 
@@ -4182,9 +4182,9 @@ button {
 
 @media (max-width: 991px) {
   .certificate__turn {
-    font-size: 0.42857rem;
-    right: -5.87143rem;
-    top: 6.64286rem;
+    font-size: 0.47619rem;
+    right: -6.52381rem;
+    top: 7.38095rem;
   }
 }
 
@@ -4213,8 +4213,8 @@ button {
 
 @media (max-width: 991px) {
   .certificate__num {
-    border-radius: 0.34286rem;
-    padding: 0 0.25714rem;
+    border-radius: 0.38095rem;
+    padding: 0 0.28571rem;
   }
 }
 
@@ -4242,9 +4242,9 @@ button {
 
 @media (max-width: 991px) {
   .certificate__sender {
-    margin-right: 1.5rem;
-    -webkit-transform: translateX(-0.34286rem);
-            transform: translateX(-0.34286rem);
+    margin-right: 1.66667rem;
+    -webkit-transform: translateX(-0.38095rem);
+            transform: translateX(-0.38095rem);
   }
 }
 
@@ -4279,10 +4279,10 @@ button {
 
 @media (max-width: 991px) {
   .certificate__sender::after {
-    width: 1.2rem;
-    height: 0.42857rem;
-    top: 0.42857rem;
-    right: -1.5rem;
+    width: 1.33333rem;
+    height: 0.47619rem;
+    top: 0.47619rem;
+    right: -1.66667rem;
   }
 }
 
@@ -4318,8 +4318,8 @@ button {
 
 @media (max-width: 991px) {
   .certificate__card--names span {
-    min-width: 4.45714rem;
-    height: 1.2rem;
+    min-width: 4.95238rem;
+    height: 1.33333rem;
   }
 }
 

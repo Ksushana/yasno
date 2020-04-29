@@ -29017,6 +29017,11 @@ $(() => {
     return;
   }
 
+  // TODO HERE
+  const sessionNumberElements = document.querySelectorAll('.contact-page-header span');
+  const sessionNumberElementsCards = document.querySelectorAll('.certificate__sessions-card');
+  // TODO HERE
+  const sessionPriceElements = document.querySelectorAll('.contact-page__form-cover form .button__blue span');
   const certificateFromNames = document.querySelectorAll('.certificate__card--names span:first-child');
   const certificateToNames = document.querySelectorAll('.certificate__card--names span:last-child');
   const fromInput = form.elements['from_name'];
@@ -29025,6 +29030,13 @@ $(() => {
     from: certificateFromNames[0].innerHTML,
     to: certificateToNames[0].innerHTML,
   };
+  // TODO HERE
+  const sessionsPrices = {
+    1: "2 850",
+    3: "8 400",
+    5: "14 100",
+    10: "28 000",
+  }
 
   const renderCertificate = () => {
     certificateFromNames.forEach(name => name.innerHTML = values.from);
@@ -29037,8 +29049,29 @@ $(() => {
     renderCertificate();
   };
 
+  const getQueryStringValue = (key) => {
+    return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+  }
+
+  const updateSessionNumbers = () => {
+    const sessionsNumber = getQueryStringValue('sessions');
+    sessionNumberElements.forEach((sessionNumberElement) => {
+      sessionNumberElement.innerHTML = sessionsNumber;
+    });
+
+    sessionNumberElementsCards.forEach((sessionNumberElementsCard) => {
+      sessionNumberElementsCard.innerHTML = sessionsNumber;
+    });
+    const sessionsPrice = sessionsPrices[sessionsNumber];
+    sessionPriceElements.forEach((sessionPriceElement) => {
+      sessionPriceElement.innerHTML = sessionsPrice;
+    });
+  }
+
   fromInput.addEventListener('input', handleInput('from'));
   toInput.addEventListener('input', handleInput('to'));
+
+  updateSessionNumbers();
 });
 (() => {
   const giftSlider = document.querySelector(`.gift__slider`);
