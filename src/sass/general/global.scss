@@ -67,6 +67,13 @@ a {
 .container {
   padding: 32px 11%;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1440px) {
+    padding: 32px 0;
+    max-width: 1122px;
+  }
 
   @include tablet {
     padding: 32px 20px;

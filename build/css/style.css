@@ -3583,6 +3583,15 @@ a:hover {
 .container {
   padding: 32px 11%;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 32px 0;
+    max-width: 1122px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -4605,6 +4614,12 @@ button {
 .gift {
   padding-bottom: 4.5rem;
   padding-top: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .gift {
+    padding-bottom: 137px;
+  }
 }
 
 @media (max-width: 991px) {

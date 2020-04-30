@@ -2,6 +2,10 @@
   padding-bottom: 4.5rem;
   padding-top: 20px;
 
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 137px;
+  }
+
   @include tablet {
     margin-right: -20px;
     margin-left: -20px;
