@@ -17,6 +17,12 @@
 .container__contacts {
   background-color: $color-white;
 
+  @media screen and (min-width: 1440px) {
+    padding: 32px 11%;
+    max-width: 100%;
+  }
+
+
   &.hide {
     display: none;
   }
@@ -40,6 +46,7 @@
   display: flex;
   margin-top: 46px;
   margin-bottom: 60px;
+
 
   @include mobile {
     margin-top: 26px;
@@ -140,6 +147,8 @@
 
 .contact-page__form-cover {
   display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include tablet {
     flex-direction: column;

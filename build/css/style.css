@@ -5204,6 +5204,13 @@ button {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 1440px) {
+  .container__contacts {
+    padding: 32px 11%;
+    max-width: 100%;
+  }
+}
+
 .container__contacts.hide {
   display: none;
 }
@@ -5349,6 +5356,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media (max-width: 991px) {
